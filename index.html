@@ -10,8 +10,8 @@
 <meta property="og:image" content="img/weekly-giveaway.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
-<script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}var L=null;try{L=new URLSearchParams(location.search).get("lang")}catch(e){}if(!L){try{L=localStorage.getItem("lang")}catch(e){}}if(!L){var n=(navigator.language||"").toLowerCase();L=/^ar/.test(n)?"ar":/^(ku|ckb|kmr)/.test(n)?"ku":"en"}if(["ku","en","ar"].indexOf(L)<0)L="en";window.__LANG=L;var h=document.documentElement;h.lang=L;h.dir=L==="en"?"ltr":"rtl";})();</script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <style>
 /* All text, images and videos come from content.json. Edit them from admin.html */
@@ -234,6 +234,40 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
 .card .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
 .card .shot.ph{display:grid;place-items:center;text-align:center;padding:16px;background:radial-gradient(ellipse 70% 60% at 80% 110%,color-mix(in srgb,var(--hi) 40%,transparent),transparent 70%),linear-gradient(160deg,var(--deep),var(--deep-2));color:var(--on-deep);font:700 clamp(1.1rem,3vw,1.4rem)/1.2 var(--display)}
 .page-first.contact{min-height:60vh}
+/* languages & RTL */
+.langsw{display:flex;gap:2px;padding:3px;border-radius:11px;border:1px solid var(--line);background:var(--surface);margin-left:auto;flex-shrink:0}
+.langsw button{border:0;background:transparent;color:var(--muted);font:600 .8rem/1 var(--body);padding:8px 9px;border-radius:8px;cursor:pointer}
+.langsw button[aria-pressed="true"]{background:var(--deep);color:var(--on-deep)}
+.langsw button[lang="ku"],.langsw button[lang="ar"]{font-family:"Vazirmatn",sans-serif}
+.nav .langsw + .theme-btn{margin-left:8px}
+:root[dir="rtl"]{--display:"Vazirmatn","Noto Sans Arabic",system-ui,sans-serif;--body:"Vazirmatn","Noto Sans Arabic",system-ui,sans-serif}
+:root[dir="rtl"] h1,:root[dir="rtl"] h2,:root[dir="rtl"] h3{letter-spacing:0;line-height:1.35}
+:root[dir="rtl"] .eyebrow,:root[dir="rtl"] .kind,:root[dir="rtl"] .cline small{font-family:var(--body);letter-spacing:0;text-transform:none;font-size:.82rem}
+:root[dir="rtl"] .nav .langsw{margin-left:0;margin-right:auto}
+:root[dir="rtl"] .nav .langsw + .theme-btn{margin-left:0;margin-right:8px}
+:root[dir="rtl"] .entry ul,:root[dir="rtl"] .sys-points{padding-left:0;padding-right:18px}
+:root[dir="rtl"] .lang small{text-align:left}
+:root[dir="rtl"] .lightbox button{right:auto;left:max(16px,env(safe-area-inset-left,0px))}
+:root[dir="rtl"] .vid .cap span{direction:ltr}
+.ltr{direction:ltr;unicode-bidi:isolate}
+/* systems */
+.webgrid{grid-template-columns:1fr!important}
+.card.sys{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px;align-items:start;padding:18px}
+.card.sys .sys-text{display:flex;flex-direction:column;gap:12px;min-width:0;padding:6px 4px}
+.gallery{display:flex;flex-direction:column;gap:8px;min-width:0}
+.gallery .cover{display:block;width:100%;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:var(--accent-soft);border:1px solid var(--line)}
+.gallery .cover img{width:100%;height:100%;object-fit:contain}
+.thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.thumbs .zoom{aspect-ratio:16/10;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:var(--accent-soft)}
+.thumbs .zoom img{object-fit:cover;object-position:top}
+.gallery .ph{aspect-ratio:16/10;border-radius:12px;display:grid;place-items:center;text-align:center;padding:16px;background:radial-gradient(ellipse 70% 60% at 80% 110%,color-mix(in srgb,var(--hi) 40%,transparent),transparent 70%),linear-gradient(160deg,var(--deep),var(--deep-2));color:var(--on-deep);font:700 clamp(1.1rem,3vw,1.4rem)/1.3 var(--display)}
+.sys-points{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;color:var(--fg);font-size:.95rem}
+.sys-points li::marker{color:var(--accent)}
+.sys-h{font:600 .9rem var(--body);color:var(--accent-ink);margin:2px 0 -4px}
+.note{font-size:.82rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+.note::before{content:"";width:8px;height:8px;border-radius:50%;background:#F2B33D;flex-shrink:0}
+@media (max-width:860px){.card.sys{grid-template-columns:1fr}}
+@media (max-width:520px){.langsw button{padding:7px 7px;font-size:.75rem}}
 </style>
 </head>
 <body>
@@ -241,6 +275,7 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#home" id="brand"></a>
+    <div class="langsw" id="langsw" role="group" aria-label="Language"><button type="button" lang="ku" data-lang="ku">کوردی</button><button type="button" lang="en" data-lang="en">EN</button><button type="button" lang="ar" data-lang="ar">عربي</button></div>
     <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg></button>
   </div>
 </nav>
@@ -256,7 +291,7 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
   <div class="page" data-page="systems" hidden><section id="web" class="page-first"></section></div>
   <div class="page" data-page="contact" hidden><section id="contact" class="contact page-first"></section></div>
 </main>
-<footer><div class="wrap"><span id="foot-name"></span><span>Duhok, Kurdistan Region</span></div></footer>
+<footer><div class="wrap"><span id="foot-name"></span><span id="foot-place">Duhok, Kurdistan Region</span></div></footer>
 </div>
 
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5H15v-5.5h-6v5.5H5.5A1.5 1.5 0 0 1 4 19z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Home</span></a><a href="#work" data-tab="work"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="7" width="17" height="12.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3.5 12.5h17" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Work</span></a><a href="#videos" data-tab="videos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.2 8.8v6.4l5.2-3.2z" fill="currentColor"/></svg><span>Videos</span></a><a href="#systems" data-tab="systems"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="11.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 20h7M12 16v4M8 9.5l-1.8 1.7L8 13M16 9.5l1.8 1.7L16 13M13 8.5l-2 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Systems</span></a><a href="#contact" data-tab="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15A1.5 1.5 0 0 1 21 8v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17V8a1.5 1.5 0 0 1 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.8 7.5 8.2 6 8.2-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Contact</span></a></nav>
@@ -272,7 +307,7 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
 (function(){
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   function tags(list){list=(list||[]).filter(Boolean);return list.length?'<div class="tags">'+list.map(function(t){return '<span>'+esc(t)+'</span>'}).join('')+'</div>':''}
-  function zoom(img,cls){if(!img||!img.src)return '';return '<button class="zoom '+(cls||'')+'" data-full="'+esc(img.src)+'" aria-label="Open image"><img src="'+esc(img.src)+'" alt="'+esc(img.alt)+'" loading="lazy"></button>'}
+  function zoom(img,cls){if(!img||!img.src)return '';return '<button class="zoom '+(cls||'')+'" data-full="'+esc(img.src)+'" aria-label="'+U('open')+'"><img src="'+esc(img.src)+'" alt="'+esc(img.alt)+'" loading="lazy"></button>'}
   function vid(v){if(!v||!v.src)return '';return '<figure class="vid"><video controls playsinline preload="none"'+(v.poster?' poster="'+esc(v.poster)+'"':'')+' src="'+esc(v.src)+'"></video><figcaption class="cap">'+esc(v.title)+(v.duration?' <span>'+esc(v.duration)+'</span>':'')+'</figcaption></figure>'}
   function initials(n){return String(n||'').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w[0].toUpperCase()}).join('')}
   var ICON={
@@ -285,7 +320,27 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
     link:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>'
   };
 
-  function render(c){
+
+  var LANG=window.__LANG||'en';
+  var UI={
+    services:['Services','خزمەتگوزاری','الخدمات'],selected:['Selected work','کارێن هەلبژارتی','أعمال مختارة'],video:['Video work','کارێن ڤیدیۆ','أعمال الفيديو'],
+    systems:['Systems & websites','سیستەم و سایت','الأنظمة والمواقع'],experience:['Experience','ئەزموون','الخبرة'],worked:['Where I have worked','جهێن من لێ کار کری','أين عملت'],
+    education:['Education','خواندن','التعليم'],skills:['Skills','شیان','المهارات'],languages:['Languages','زمان','اللغات'],contact:['Contact','پەیوەندی','تواصل'],
+    email:['Email','ئیمەیل','البريد الإلكتروني'],copy:['Copy','کۆپی','نسخ'],copied:['Copied','کۆپی بوو','تم النسخ'],selectedTxt:['Selected','هەلبژارت','تم التحديد'],
+    viewWork:['View my work','کارێن من ببینە','شاهد أعمالي'],touch:['Get in touch','پەیوەندیێ ب من بکە','تواصل معي'],wa:['Message on WhatsApp','نامە ل واتسئەپێ','راسلني على واتساب'],
+    call:['Call me','پەیوەندیێ بکە','اتصل بي'],mail:['Send an email','ئیمەیلەکێ بنێرە','أرسل بريدًا'],visit:['Visit the site','سەرەدانا سایتی بکە','زيارة الموقع'],
+    how:['How it works','چاوا کار دکەت','كيف يعمل'],close:['Close','گرتن','إغلاق'],open:['Open image','وێنەی ڤەکە','افتح الصورة'],
+    place:['Duhok, Kurdistan Region','دهۆک، هەرێما کوردستانێ','دهوك، إقليم كوردستان'],
+    home:['Home','سەرەکی','الرئيسية'],work:['Work','کار','الأعمال'],videos:['Videos','ڤیدیۆ','الفيديو'],systemsTab:['Systems','سیستەم','الأنظمة'],contactTab:['Contact','پەیوەندی','تواصل'],
+    error:['The page could not load its content. Refresh to try again.','پەڕێ نەشیا ناڤەرۆکێ بار بکەت. پەڕێ نوو بکە (Refresh).','تعذّر تحميل المحتوى. حدّث الصفحة.'],
+    theme:['Switch light or dark mode','گوهۆڕینا دۆخێ ڕۆناهی و تاری','التبديل بين الوضع الفاتح والداكن']
+  };
+  function U(k){var r=UI[k];if(!r)return k;return r[LANG==='ku'?1:LANG==='ar'?2:0]}
+  function isL(v){return v&&typeof v==='object'&&!Array.isArray(v)&&('en' in v||'ku' in v||'ar' in v)&&Object.keys(v).every(function(k){return k==='en'||k==='ku'||k==='ar'})}
+  function loc(o){if(isL(o))return o[LANG]||o.en||o.ku||o.ar||'';if(Array.isArray(o))return o.map(loc);if(o&&typeof o==='object'){var r={};for(var k in o)r[k]=loc(o[k]);return r}return o}
+  var RAW=null;
+  function render(raw){
+    var c=loc(raw);
     var p=c.profile||{};
     document.title=(c.site&&c.site.title)||p.name||'Portfolio';
     var md=document.querySelector('meta[name=description]');if(md&&c.site)md.content=c.site.description||'';
@@ -298,21 +353,21 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
     document.getElementById('top').innerHTML='<div class="wrap"><div class="hero-text">'+
       (p.eyebrow?'<span class="eyebrow">'+esc(p.eyebrow)+'</span>':'')+
       '<h1>'+esc(p.name)+'</h1><p class="lede">'+esc(p.lede)+'</p>'+
-      '<div class="hero-actions"><a class="btn btn-light" href="#work">View my work</a><a class="btn btn-ghost" href="#contact">Get in touch</a></div>'+
+      '<div class="hero-actions"><a class="btn btn-light" href="#work">'+U('viewWork')+'</a><a class="btn btn-ghost" href="#contact">'+U('touch')+'</a></div>'+
       ((p.facts||[]).length?'<div class="facts">'+p.facts.map(function(f){return '<div><b>'+esc(f.value)+'</b><small>'+esc(f.label)+'</small></div>'}).join('')+'</div>':'')+
       '</div><aside class="portrait-card"><div class="portrait">'+
-      (p.photo?'<img src="'+esc(p.photo)+'" alt="Portrait of '+esc(p.name)+'">':'<span class="mono" aria-hidden="true">'+esc(initials(p.name))+'</span>')+
+      (p.photo?'<img src="'+esc(p.photo)+'" alt="Portrait of '+esc(p.name)+'">':'<span class="mono" aria-hidden="true">'+esc(initials((raw.profile&&raw.profile.name&&raw.profile.name.en)||p.name))+'</span>')+
       '</div>'+(p.status?'<div class="status"><i></i><span>'+esc(p.status)+'</span></div>':'')+'</aside></div>';
 
     // services
     var s=c.services||{};
-    document.getElementById('services').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">Services</span><h2>'+esc(s.title)+'</h2></div><div class="services">'+
+    document.getElementById('services').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">'+U('services')+'</span><h2>'+esc(s.title)+'</h2></div><div class="services">'+
       (s.items||[]).map(function(i){return '<div class="svc"><h3>'+esc(i.title)+'</h3><p>'+esc(i.text)+'</p></div>'}).join('')+'</div></div>';
 
     // campaigns
     var cp=c.campaigns||{},items=cp.items||[];
     var feat=items.filter(function(i){return i.featured}),rest=items.filter(function(i){return !i.featured});
-    document.getElementById('campaigns').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">Selected work</span><h2>'+esc(cp.title)+'</h2>'+(cp.intro?'<p>'+esc(cp.intro)+'</p>':'')+'</div>'+
+    document.getElementById('campaigns').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">'+U('selected')+'</span><h2>'+esc(cp.title)+'</h2>'+(cp.intro?'<p>'+esc(cp.intro)+'</p>':'')+'</div>'+
       feat.map(function(f){
         var d=(f.details||[]).filter(function(r){return r.label||r.value});
         return '<article class="feature">'+zoom((f.images||[])[0],'thumb ratio-45')+'<div class="feature-text">'+
@@ -332,7 +387,7 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
 
     // videos
     var v=c.videos||{};
-    document.getElementById('video').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">Video work</span><h2>'+esc(v.title)+'</h2>'+(v.intro?'<p>'+esc(v.intro)+'</p>':'')+'</div><div class="vgroups">'+
+    document.getElementById('video').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">'+U('video')+'</span><h2>'+esc(v.title)+'</h2>'+(v.intro?'<p>'+esc(v.intro)+'</p>':'')+'</div><div class="vgroups">'+
       (v.groups||[]).map(function(g){return '<div class="vgroup"><div class="vgroup-head"><h3>'+esc(g.title)+'</h3>'+(g.text?'<p>'+esc(g.text)+'</p>':'')+'</div><div class="vrow">'+(g.items||[]).map(vid).join('')+'</div></div>'}).join('')+'</div></div>';
 
     // ASP
@@ -347,42 +402,56 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
 
     // web
     var w=c.web||{};
-    document.getElementById('web').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">Systems &amp; websites</span><h2>'+esc(w.title)+'</h2></div><div class="webgrid">'+
-      (w.items||[]).map(function(i){return '<article class="card">'+(i.image?zoom({src:i.image,alt:i.title},'shot'):'<div class="shot ph" aria-hidden="true">'+esc(i.title)+'</div>')+(i.kind?'<span class="kind">'+esc(i.kind)+'</span>':'')+'<h3>'+esc(i.title)+'</h3><p>'+esc(i.text)+'</p>'+
-        (i.link?'<a class="more" href="'+esc(i.link)+'" target="_blank" rel="noopener">'+esc(i.linkLabel||'Visit the site')+' →</a>':'')+tags(i.tags)+'</article>'}).join('')+'</div></div>';
+    document.getElementById('web').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">'+U('systems')+'</span><h2>'+esc(w.title)+'</h2></div><div class="webgrid">'+
+      (w.items||[]).map(function(i){
+        var imgs=(i.images||[]).filter(function(x){return x&&x.src});if(!imgs.length&&i.image)imgs=[{src:i.image,alt:i.title}];
+        var gal='<div class="gallery">'+(imgs.length?zoom(imgs[0],'cover')+(imgs.length>1?'<div class="thumbs">'+imgs.slice(1).map(function(x){return zoom(x,'')}).join('')+'</div>':''):'<div class="ph" aria-hidden="true">'+esc(i.title)+'</div>')+'</div>';
+        var pts=(i.points||[]).filter(Boolean);
+        return '<article class="card sys">'+gal+'<div class="sys-text">'+(i.kind?'<span class="kind">'+esc(i.kind)+'</span>':'')+'<h3>'+esc(i.title)+'</h3><p>'+esc(i.text)+'</p>'+
+          (pts.length?'<p class="sys-h">'+U('how')+'</p><ul class="sys-points">'+pts.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>':'')+
+          (i.note?'<p class="note">'+esc(i.note)+'</p>':'')+
+          (i.link?'<a class="more" href="'+esc(i.link)+'" target="_blank" rel="noopener">'+esc(i.linkLabel||U('visit'))+(LANG==='en'?' →':' ←')+'</a>':'')+tags(i.tags)+'</div></article>'}).join('')+'</div></div>';
 
     // resume
-    document.getElementById('resume').innerHTML='<div class="wrap resume"><div><div class="sec-head"><span class="eyebrow">Experience</span><h2>Where I have worked</h2></div><div class="ledger">'+
+    document.getElementById('resume').innerHTML='<div class="wrap resume"><div><div class="sec-head"><span class="eyebrow">'+U('experience')+'</span><h2>'+U('worked')+'</h2></div><div class="ledger">'+
       (c.experience||[]).map(function(e){return '<div class="entry"><div class="when">'+esc(e.when)+'</div><div><h3>'+esc(e.title)+'</h3><div class="where">'+esc(e.where)+'</div>'+
         ((e.points||[]).length?'<ul>'+e.points.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>':'')+'</div></div>'}).join('')+
       '</div></div><div class="side">'+
-      ((c.education||[]).length?'<div class="side-block"><span class="eyebrow">Education</span>'+c.education.map(function(e){return '<div class="edu-card"><h3>'+esc(e.title)+'</h3><small>'+esc(e.detail)+'</small></div>'}).join('')+'</div>':'')+
-      ((c.skills||[]).length?'<div class="side-block"><span class="eyebrow">Skills</span><div class="chips">'+c.skills.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div></div>':'')+
-      ((c.languages||[]).length?'<div class="side-block"><span class="eyebrow">Languages</span><div class="langs">'+c.languages.map(function(l){var pc=Math.max(0,Math.min(100,+l.percent||0));return '<div class="lang"><span>'+esc(l.name)+'</span><div class="meter"><i style="width:'+pc+'%"></i></div><small>'+esc(l.level)+'</small></div>'}).join('')+'</div></div>':'')+
+      ((c.education||[]).length?'<div class="side-block"><span class="eyebrow">'+U('education')+'</span>'+c.education.map(function(e){return '<div class="edu-card"><h3>'+esc(e.title)+'</h3><small>'+esc(e.detail)+'</small></div>'}).join('')+'</div>':'')+
+      ((c.skills||[]).length?'<div class="side-block"><span class="eyebrow">'+U('skills')+'</span><div class="chips">'+c.skills.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div></div>':'')+
+      ((c.languages||[]).length?'<div class="side-block"><span class="eyebrow">'+U('languages')+'</span><div class="langs">'+c.languages.map(function(l){var pc=Math.max(0,Math.min(100,+l.percent||0));return '<div class="lang"><span>'+esc(l.name)+'</span><div class="meter"><i style="width:'+pc+'%"></i></div><small>'+esc(l.level)+'</small></div>'}).join('')+'</div></div>':'')+
       '</div></div>';
 
     // contact
     var k=c.contact||{},tel=String(k.phone||'').replace(/[^\d+]/g,'');
-    document.getElementById('contact').innerHTML='<div class="wrap contact-box"><div class="sec-head" style="margin:0"><span class="eyebrow">Contact</span><h2>'+esc(k.title)+'</h2><p>'+esc(k.text)+'</p></div><div class="contact-lines">'+
-      (k.email?'<div class="cline"><div><small>Email</small><span id="email">'+esc(k.email)+'</span></div><button class="copy" data-target="email">Copy</button></div>':'')+
-      (k.phone?'<div class="cline"><div><small>'+esc(k.phoneLabel||'Phone')+'</small><span id="phone">'+esc(k.phone)+'</span></div><button class="copy" data-target="phone">Copy</button></div>':'')+
+    document.getElementById('contact').innerHTML='<div class="wrap contact-box"><div class="sec-head" style="margin:0"><span class="eyebrow">'+U('contact')+'</span><h2>'+esc(k.title)+'</h2><p>'+esc(k.text)+'</p></div><div class="contact-lines">'+
+      (k.email?'<div class="cline"><div><small>'+U('email')+'</small><span id="email">'+esc(k.email)+'</span></div><button class="copy" data-target="email">'+U('copy')+'</button></div>':'')+
+      (k.phone?'<div class="cline"><div><small>'+esc(k.phoneLabel||'Phone')+'</small><span id="phone" class="ltr">'+esc(k.phone)+'</span></div><button class="copy" data-target="phone">'+U('copy')+'</button></div>':'')+
       '<div class="hero-actions">'+
-        (k.whatsapp?'<a class="btn btn-light" href="https://wa.me/'+esc(String(k.whatsapp).replace(/\D/g,''))+'" target="_blank" rel="noopener">Message on WhatsApp</a>':'')+
-        (tel?'<a class="btn btn-ghost" href="tel:'+esc(tel)+'">Call me</a>':'')+
-        (k.email?'<a class="btn btn-ghost" href="mailto:'+esc(k.email)+'">Send an email</a>':'')+
+        (k.whatsapp?'<a class="btn btn-light" href="https://wa.me/'+esc(String(k.whatsapp).replace(/\D/g,''))+'" target="_blank" rel="noopener">'+U('wa')+'</a>':'')+
+        (tel?'<a class="btn btn-ghost" href="tel:'+esc(tel)+'">'+U('call')+'</a>':'')+
+        (k.email?'<a class="btn btn-ghost" href="mailto:'+esc(k.email)+'">'+U('mail')+'</a>':'')+
       '</div>'+
       ((k.socials||[]).length?'<div class="socials" aria-label="Find me online">'+k.socials.filter(function(x){return x.url}).map(function(x){return '<a class="btn btn-ghost" href="'+esc(x.url)+'" target="_blank" rel="noopener">'+(ICON[x.type]||ICON.link)+esc(x.label)+'</a>'}).join('')+'</div>':'')+
       '</div></div>';
 
+    document.getElementById('foot-place').textContent=U('place');
+    document.getElementById('lb-close').textContent=U('close');
+    var tb={home:'home',work:'work',videos:'videos',systems:'systemsTab',contact:'contactTab'};
+    document.querySelectorAll('.tabbar a').forEach(function(a){a.querySelector('span').textContent=U(tb[a.dataset.tab])});
+    var thb=document.getElementById('theme-btn');if(thb)thb.setAttribute('aria-label',U('theme'));
+    document.querySelectorAll('#langsw button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.lang===LANG))});
     wire();
   }
+  function setLang(l){LANG=l;window.__LANG=l;var h=document.documentElement;h.lang=l;h.dir=l==='en'?'ltr':'rtl';try{localStorage.setItem('lang',l)}catch(e){}if(RAW)render(RAW)}
+  document.getElementById('langsw').addEventListener('click',function(e){var b=e.target.closest('[data-lang]');if(b&&b.dataset.lang!==LANG)setLang(b.dataset.lang)});
 
   function wire(){
     document.querySelectorAll('.copy').forEach(function(b){
       b.addEventListener('click',function(){
         var el=document.getElementById(b.dataset.target),t=el.textContent;
-        function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)}
-        function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+        function done(){b.textContent=U('copied');setTimeout(function(){b.textContent=U('copy')},1600)}
+        function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent=U('selectedTxt')}
         try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
       });
     });
@@ -393,14 +462,14 @@ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
     });
     document.getElementById('lb-close').onclick=closeLb;
     lb.onclick=function(e){if(e.target===lb)closeLb()};
-    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)closeLb()});
+    if(!window.__esc){window.__esc=1;document.addEventListener('keydown',function(e){var l=document.getElementById('lightbox');if(e.key==='Escape'&&!l.hidden){l.hidden=true;document.getElementById('lb-img').src=''}})}
     var vids=document.querySelectorAll('video');
     vids.forEach(function(v){v.addEventListener('play',function(){vids.forEach(function(o){if(o!==v)o.pause()})})});
   }
 
   fetch('content.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
-    .then(render)
-    .catch(function(){document.getElementById('top').innerHTML='<div class="wrap"><p class="lede">The page could not load its content. Refresh to try again.</p></div>'});
+    .then(function(d){RAW=d;render(d)})
+    .catch(function(){document.getElementById('top').innerHTML='<div class="wrap"><p class="lede">'+U('error')+'</p></div>'});
 })();
 </script>
 

@@ -73,6 +73,13 @@ textarea{min-height:96px;resize:vertical}
 .media .side input[type=text]{direction:ltr;font-size:.88rem}
 .pend{font-size:.82rem;color:var(--pend-fg);background:var(--pend-bg);border-radius:8px;padding:3px 8px;align-self:flex-start}
 .hint{font-size:.85rem;color:var(--muted);margin:-6px 0 12px}
+.lf{display:flex;flex-direction:column;gap:6px}
+.lf-row{display:grid;grid-template-columns:64px 1fr;gap:8px;align-items:start}
+.lf-tag{font-size:.75rem;font-weight:700;color:var(--muted);background:var(--accent-soft);border-radius:8px;padding:9px 4px;text-align:center}
+.lf textarea{min-height:76px}
+.lrow{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:8px;background:var(--soft)}
+.lrow .lf{flex:1;min-width:0}
+.lrow .tools{flex-direction:column}
 
 /* login */
 .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin:28px 0}
@@ -153,7 +160,7 @@ var L={
   facts:'ژمارە (ل بن ناساندنێ)',value:'ژمارە',label:'ناڤ',items:'لیست',text:'نڤیسین',intro:'نڤیسینا ناساندنێ',
   featured:'کەمپینا سەرەکی (ب مەزنی نیشان بدە)',wide:'پانتر نیشان بدە',highlight:'ژمارا مەزن (وەکی 25,000 IQD)',details:'هوورگلی',images:'وێنە',
   src:'فایل',alt:'وەسفا وێنەیێ (ب ئینگلیزی)',tags:'تاگ',groups:'کۆمێن ڤیدیۆیان',duration:'درێژاهی (وەکی 0:24)',poster:'وێنەیێ سەر ڤیدیۆیێ',
-  paragraphs:'پاراگراف',image:'وێنە',link:'لینک',linkLabel:'نڤیسینا دوگمێ',kind:'جۆر',when:'دەم (وەکی 2023 – Now)',where:'جهـ',points:'خال',
+  paragraphs:'پاراگراف',note:'تێبینی (ب ڕەنگێ زەر)',image:'وێنە',link:'لینک',linkLabel:'نڤیسینا دوگمێ',kind:'جۆر',when:'دەم (وەکی 2023 – Now)',where:'جهـ',points:'خال',
   detail:'هوورگلی',level:'ئاست',percent:'ڕێژە ٪ (0 – 100)',email:'ئیمەیل',phone:'ژمارا تەلەفۆنێ',phoneLabel:'ناڤێ ژمارێ',
   whatsapp:'ژمارا واتسئەپێ (ب تنێ ژمارە، وەکی 9647503500818)',socials:'تۆڕێن جڤاکی',type:'جۆر',url:'لینک'
 };
@@ -168,21 +175,38 @@ var LONG={text:1,lede:1,intro:1,description:1};
 var LONGLIST={paragraphs:1,points:1};
 var MEDIA={src:1,poster:1,image:1,photo:1,background:1};
 var SOCIAL=['linkedin','instagram','facebook','tiktok','youtube','asp','link'];
+function L3(en){return {en:en||'',ku:'',ar:''}}
 var T={
-  'profile.facts':{value:'',label:''},
-  'services.items':{title:'',text:''},
-  'campaigns.items':{featured:false,wide:false,eyebrow:'',title:'',text:'',highlight:'',details:[],images:[{src:'',alt:''}],tags:[]},
-  'campaigns.items.*.details':{label:'',value:''},
-  'campaigns.items.*.images':{src:'',alt:''},
-  'videos.groups':{title:'',text:'',items:[{title:'',duration:'',src:'',poster:''}]},
-  'videos.groups.*.items':{title:'',duration:'',src:'',poster:''},
-  'asp.videos':{title:'',duration:'',src:'',poster:''},
-  'web.items':{image:'',kind:'',title:'',text:'',link:'',linkLabel:'Visit the site',tags:[]},
-  'experience':{when:'',title:'',where:'',points:['']},
-  'education':{title:'',detail:''},
-  'languages':{name:'',level:'',percent:50},
-  'contact.socials':{type:'link',label:'',url:''}
+  'profile.facts':{value:'',label:L3()},
+  'services.items':{title:L3(),text:L3()},
+  'campaigns.items':{featured:false,wide:false,eyebrow:L3(),title:L3(),text:L3(),highlight:'',details:[],images:[{src:'',alt:L3()}],tags:[]},
+  'campaigns.items.*.details':{label:L3(),value:L3()},
+  'campaigns.items.*.images':{src:'',alt:L3()},
+  'videos.groups':{title:L3(),text:L3(),items:[{title:L3(),duration:'',src:'',poster:''}]},
+  'videos.groups.*.items':{title:L3(),duration:'',src:'',poster:''},
+  'asp.videos':{title:L3(),duration:'',src:'',poster:''},
+  'web.items':{images:[{src:'',alt:L3()}],kind:L3(),title:L3(),text:L3(),points:[],note:L3(),link:'',linkLabel:L3('Visit the site'),tags:[]},
+  'web.items.*.images':{src:'',alt:L3()},
+  'experience':{when:L3(),title:L3(),where:L3(),points:[L3()]},
+  'education':{title:L3(),detail:L3()},
+  'languages':{name:L3(),level:L3(),percent:50},
+  'contact.socials':{type:'link',label:L3(),url:''}
 };
+var LANGARR={tags:1,skills:1,paragraphs:1,points:1};
+function isL(v){return v&&typeof v==='object'&&!Array.isArray(v)&&('en' in v||'ku' in v||'ar' in v)&&Object.keys(v).every(function(k){return k==='en'||k==='ku'||k==='ar'})}
+function sL(x){return isL(x)?(x.ku||x.en||x.ar||''):x}
+var LN=[['ku','کوردی','rtl'],['en','English','ltr'],['ar','عەرەبی','rtl']];
+function langField(p,v,long){
+  var box=el('div',{class:'lf'});
+  LN.forEach(function(l){
+    var inp=long?el('textarea',{dir:l[2],lang:l[0]}):el('input',{type:'text',dir:l[2],lang:l[0]});
+    inp.value=v[l[0]]||'';
+    inp.oninput=function(){var o=get(p);o[l[0]]=inp.value;changed();var d=inp.closest('details');if(d&&d.dataset.p){try{var ip=JSON.parse(d.dataset.p);d.querySelector('.t').textContent=summaryText(get(ip),ip[ip.length-1])}catch(e){}}};
+    box.appendChild(el('div',{class:'lf-row'},[el('span',{class:'lf-tag',text:l[1]}),inp]));
+  });
+  return box;
+}
+function isLongPath(p){var k=p[p.length-1];return !!(LONG[k]||(typeof k==='number'&&LONGLIST[p[p.length-2]]))}
 var ADD={facts:'ژمارەکێ',items:'دانەیەکێ',details:'هێلەکێ',images:'وێنەیەکێ',tags:'تاگەکێ',groups:'کۆمەکێ',videos:'ڤیدیۆیەکێ',paragraphs:'پاراگرافەکێ',
   languages:'زمانەکێ',experience:'کارەکێ',points:'خالەکێ',education:'خواندنەکێ',skills:'شیانەکێ',socials:'لینکەکێ'};
 
@@ -316,12 +340,14 @@ function draw(){
 }
 function label(k){return L[k]||k}
 function summaryText(v,i){
-  if(v&&typeof v==='object')return v.title||v.name||v.label||v.value||v.when||v.url||('#'+(i+1));
+  if(isL(v))return sL(v)||('#'+(i+1));
+  if(v&&typeof v==='object')return sL(v.title)||sL(v.name)||sL(v.label)||sL(v.value)||sL(v.when)||sL(v.alt)||v.url||(v.src?String(v.src).split('/').pop():'')||('#'+(i+1));
   return v||('#'+(i+1));
 }
 function node(p,v,top){
   var k=p[p.length-1];
   if(Array.isArray(v))return arrayNode(p,v,top);
+  if(isL(v))return langField(p,v,isLongPath(p));
   if(v&&typeof v==='object'){
     var box=el('div');
     Object.keys(v).forEach(function(key){box.appendChild(fieldFor(p.concat(key),v[key]))});
@@ -332,6 +358,7 @@ function node(p,v,top){
 }
 function fieldFor(p,v){
   var k=p[p.length-1],id='f'+Math.random().toString(36).slice(2);
+  if(isL(v)){var lf=el('div',{class:'field'});if(typeof k==='string')lf.appendChild(el('div',{class:'lab',text:label(k)}));lf.appendChild(langField(p,v,isLongPath(p)));if(HINT[k])lf.appendChild(el('p',{class:'hint',text:HINT[k]}));return lf}
   if(Array.isArray(v)||(v&&typeof v==='object')){
     var f=el('div',{class:'field'},[el('div',{class:'lab',text:label(k)})]);f.appendChild(node(p,v));return f;
   }
@@ -400,7 +427,8 @@ function mediaField(p,v){
 }
 function arrayNode(p,arr,top){
   var k=p[p.length-1],box=el('div'),list=el('div',{class:'list'});
-  var simple=arr.length?arr.every(function(x){return typeof x!=='object'}):!T[pathKey(p)];
+  var langList=arr.length?arr.every(isL):(!!LANGARR[k]||pathKey(p)==='asp.languages');
+  var simple=!langList&&(arr.length?arr.every(function(x){return typeof x!=='object'}):!T[pathKey(p)]);
   arr.forEach(function(v,i){
     var ip=p.concat(i);
     var tools=el('div',{class:'tools'},[
@@ -408,7 +436,9 @@ function arrayNode(p,arr,top){
       el('button',{class:'ib',type:'button',title:'بۆ خوارێ','aria-label':'بۆ خوارێ',text:'▼',onclick:function(e){e.preventDefault();move(p,i,1)}}),
       el('button',{class:'ib del',type:'button',title:'ژێبرن','aria-label':'ژێبرن',text:'✕',onclick:function(e){e.preventDefault();if(confirm('دێ ژێبەی؟')){arr.splice(i,1);changed();draw()}}})
     ]);
-    if(simple){
+    if(langList){
+      list.appendChild(el('div',{class:'lrow'},[langField(ip,v,isLongPath(ip)),tools]));
+    } else if(simple){
       var f=fieldFor(ip,v);var inp=f.querySelector('input,textarea');
       if(inp&&inp.tagName==='INPUT'){var r=el('div',{class:'row'},[inp,tools]);list.appendChild(r)}
       else {f.appendChild(tools);list.appendChild(f)}
@@ -421,7 +451,7 @@ function arrayNode(p,arr,top){
   });
   box.appendChild(list);
   box.appendChild(el('button',{class:'btn line small add',type:'button',text:'+ '+(ADD[k]||'دانەیەکێ')+' زێدە بکە',onclick:function(){
-    var t=T[pathKey(p)];var nv=t!==undefined?clone(t):(arr.length&&typeof arr[0]==='object'?blank(arr[0]):'');
+    var t=T[pathKey(p)];var nv=t!==undefined?clone(t):langList?L3():(arr.length&&typeof arr[0]==='object'?blank(arr[0]):'');
     arr.push(nv);changed();draw();
     var all=$('editor').querySelectorAll('details');if(!simple&&all.length){var last=null;all.forEach(function(d){if(d.dataset.p===JSON.stringify(p.concat(arr.length-1)))last=d});if(last){last.open=true;last.scrollIntoView({block:'center'})}}
   }}));
