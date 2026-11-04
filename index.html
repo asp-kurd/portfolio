@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <style>
 /* All text, images and videos come from content.json. Edit them from admin.html */
@@ -55,6 +56,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .nav-links a{text-decoration:none;font-weight:500;font-size:.92rem;color:var(--muted)}
 .nav-links a:hover{color:var(--fg)}
 .nav .btn{margin-left:4px}
+.theme-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);display:grid;place-items:center;cursor:pointer;flex-shrink:0;padding:0}
+.theme-btn svg{width:20px;height:20px}
+.theme-btn .sun{display:none}
+:root[data-theme="dark"] .theme-btn .sun{display:block}:root[data-theme="dark"] .theme-btn .moon{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme-btn .sun{display:block}:root:not([data-theme="light"]) .theme-btn .moon{display:none}}
+@media (max-width:760px){.nav .theme-btn{margin-left:auto}.nav .theme-btn + .btn{margin-left:0}}
 .btn{font:600 .92rem var(--body);border-radius:10px;padding:11px 18px;border:0;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}
 .btn-solid{background:var(--deep);color:var(--on-deep)}
 .btn-light{background:var(--on-deep);color:#142C4C}
@@ -213,6 +220,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <div class="wrap">
     <a class="brand" href="#top" id="brand"></a>
     <div class="nav-links"><a href="#services">Services</a><a href="#campaigns">Work</a><a href="#video">Video</a><a href="#asp">ASP</a><a href="#resume">Résumé</a></div>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg></button>
     <a class="btn btn-solid btn-sm" href="#contact">Contact</a>
   </div>
 </nav>
@@ -370,5 +378,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 })();
 </script>
 
+<script>
+(function(){
+  var b=document.getElementById('theme-btn');if(!b)return;
+  function isDark(){var t=document.documentElement.getAttribute('data-theme');if(t)return t==='dark';return matchMedia('(prefers-color-scheme: dark)').matches}
+  b.addEventListener('click',function(){var t=isDark()?'light':'dark';document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}});
+})();
+</script>
 </body>
 </html>

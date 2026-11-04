@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>ئەدمین – پۆرتفۆلیۆ</title>
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap">
 <style>
-:root{--bg:#F3F5F9;--surface:#fff;--fg:#142C4C;--muted:#5A6B83;--line:#D0D7E3;--accent:#22528F;--accent-soft:#E3ECF7;--ok:#1E7A4C;--ok-soft:#E2F3EA;--bad:#B3261E;--bad-soft:#FBE7E5}
+:root{color-scheme:light;--bg:#F3F5F9;--surface:#fff;--field:#fff;--soft:#FAFBFD;--prev:#EEF1F6;--fg:#142C4C;--muted:#5A6B83;--line:#D0D7E3;--accent:#22528F;--accent-soft:#E3ECF7;--ok:#1E7A4C;--bad:#B3261E;--pend-bg:#FFF4D6;--pend-fg:#8A5A00;--veil:rgba(243,245,249,.85);--tab-on:#142C4C;--tab-on-fg:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0B1626;--surface:#12223A;--field:#0E1B2E;--soft:#0F1E33;--prev:#16304F;--fg:#E3ECF7;--muted:#93A6C0;--line:#22385A;--accent:#2E6AAE;--accent-soft:#16304F;--ok:#1E7A4C;--bad:#F2B8B5;--pend-bg:#3A2E10;--pend-fg:#F2C66D;--veil:rgba(11,22,38,.88);--tab-on:#E3ECF7;--tab-on-fg:#0B1626}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0B1626;--surface:#12223A;--field:#0E1B2E;--soft:#0F1E33;--prev:#16304F;--fg:#E3ECF7;--muted:#93A6C0;--line:#22385A;--accent:#2E6AAE;--accent-soft:#16304F;--ok:#1E7A4C;--bad:#F2B8B5;--pend-bg:#3A2E10;--pend-fg:#F2C66D;--veil:rgba(11,22,38,.88);--tab-on:#E3ECF7;--tab-on-fg:#0B1626}
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--bg);color:var(--fg);font:16px/1.55 "Vazirmatn",system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -27,13 +30,17 @@ button,input,textarea,select{font:inherit;color:inherit}
 .btn.line{background:var(--surface);color:var(--fg);border:1px solid var(--line)}
 .btn.small{padding:6px 12px;font-size:.88rem}
 .btn.danger{background:var(--surface);color:var(--bad);border:1px solid var(--line)}
+.theme-btn{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);display:grid;place-items:center;cursor:pointer;flex-shrink:0;padding:0;font-size:1.1rem}
+.login-top{display:flex;justify-content:flex-end;padding-top:16px}
+.theme-btn .sun{display:none}:root[data-theme="dark"] .theme-btn .sun{display:block}:root[data-theme="dark"] .theme-btn .moon{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme-btn .sun{display:block}:root:not([data-theme="light"]) .theme-btn .moon{display:none}}
 .dot{min-width:20px;height:20px;border-radius:10px;background:#F2B33D;color:#142C4C;font-size:.75rem;display:inline-grid;place-items:center;padding:0 6px}
 
 /* tabs */
 .tabs{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;max-width:760px;margin:0 auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tab{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;font-weight:600;font-size:.92rem;cursor:pointer;white-space:nowrap}
-.tab[aria-selected="true"]{background:var(--fg);color:#fff;border-color:var(--fg)}
+.tab[aria-selected="true"]{background:var(--tab-on);color:var(--tab-on-fg);border-color:var(--tab-on)}
 
 /* editor */
 main{padding:6px 0 120px}
@@ -41,12 +48,12 @@ main{padding:6px 0 120px}
 .group>h2{margin:0 0 12px;font-size:1.15rem}
 .field{display:flex;flex-direction:column;gap:5px;margin:0 0 14px}
 .field>label,.field>.lab{font-weight:600;font-size:.9rem;color:var(--muted)}
-input[type=text],input[type=number],input[type=url],input[type=email],textarea,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;unicode-bidi:plaintext}
+input[type=text],input[type=number],input[type=url],input[type=email],textarea,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--field);unicode-bidi:plaintext}
 textarea{min-height:96px;resize:vertical}
 .check{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-weight:600}
 .check input{width:20px;height:20px}
 .list{display:flex;flex-direction:column;gap:10px}
-.item{border:1px solid var(--line);border-radius:12px;background:#FAFBFD}
+.item{border:1px solid var(--line);border-radius:12px;background:var(--soft)}
 .item>summary{list-style:none;display:flex;align-items:center;gap:8px;padding:10px 12px;cursor:pointer;font-weight:600}
 .item>summary::-webkit-details-marker{display:none}
 .item>summary .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;unicode-bidi:plaintext}
@@ -54,17 +61,17 @@ textarea{min-height:96px;resize:vertical}
 .item[open]>summary .chev{transform:rotate(-90deg)}
 .item .inner{padding:4px 12px 12px}
 .tools{display:flex;gap:6px;flex-shrink:0}
-.ib{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;font-size:.95rem}
+.ib{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--field);color:var(--fg);cursor:pointer;display:grid;place-items:center;font-size:.95rem}
 .ib.del{color:var(--bad)}
 .row{display:flex;gap:8px;align-items:center}
 .row input{flex:1}
 .add{margin-top:10px}
 .media{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
-.media .prev{width:96px;height:96px;border-radius:10px;border:1px solid var(--line);background:#EEF1F6 center/cover no-repeat;flex-shrink:0;overflow:hidden;display:grid;place-items:center;color:var(--muted);font-size:.8rem;text-align:center}
+.media .prev{width:96px;height:96px;border-radius:10px;border:1px solid var(--line);background:var(--prev) center/cover no-repeat;flex-shrink:0;overflow:hidden;display:grid;place-items:center;color:var(--muted);font-size:.8rem;text-align:center}
 .media .prev video,.media .prev img{width:100%;height:100%;object-fit:cover}
 .media .side{flex:1;min-width:180px;display:flex;flex-direction:column;gap:8px}
 .media .side input[type=text]{direction:ltr;font-size:.88rem}
-.pend{font-size:.82rem;color:#8A5A00;background:#FFF4D6;border-radius:8px;padding:3px 8px;align-self:flex-start}
+.pend{font-size:.82rem;color:var(--pend-fg);background:var(--pend-bg);border-radius:8px;padding:3px 8px;align-self:flex-start}
 .hint{font-size:.85rem;color:var(--muted);margin:-6px 0 12px}
 
 /* login */
@@ -76,8 +83,8 @@ textarea{min-height:96px;resize:vertical}
 /* toast */
 .toast{position:fixed;z-index:30;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));max-width:calc(100% - 32px);padding:12px 16px;border-radius:12px;font-weight:600;box-shadow:0 8px 24px rgba(20,44,76,.2);background:var(--fg);color:#fff;text-align:center}
 .toast.ok{background:var(--ok)}
-.toast.bad{background:var(--bad)}
-.busy{position:fixed;inset:0;z-index:25;background:rgba(243,245,249,.85);display:grid;place-items:center;font-weight:700;text-align:center;padding:20px}
+.toast.bad{background:#B3261E}
+.busy{position:fixed;inset:0;z-index:25;background:var(--veil);display:grid;place-items:center;font-weight:700;text-align:center;padding:20px}
 .busy small{display:block;font-weight:500;color:var(--muted);margin-top:6px}
 </style>
 </head>
@@ -85,7 +92,8 @@ textarea{min-height:96px;resize:vertical}
 
 <!-- ===== چوونا ژوور ===== -->
 <div id="login" class="wrap" hidden>
-  <div class="card">
+  <div class="login-top"><button class="theme-btn" type="button" data-theme-toggle aria-label="دۆخێ ڕۆناهی یان تاری"><svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg><svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg></button></div>
+  <div class="card" style="margin-top:12px">
     <h2>ئەدمینێ پۆرتفۆلیۆیێ</h2>
     <p>ئەڤ پەڕە ب تنێ بۆ تەیە. جارا ئێکێ ڤان زانیاریان بنڤیسە. پاشان مۆبایلا تە دێ وان ل بیرا خۆ هێلیت.</p>
     <div class="field">
@@ -106,6 +114,7 @@ textarea{min-height:96px;resize:vertical}
   <div class="bar">
     <div class="wrap">
       <h1>ئێدیتکرنا پۆرتفۆلیۆیێ</h1>
+      <button class="theme-btn" type="button" data-theme-toggle aria-label="دۆخێ ڕۆناهی یان تاری"><svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg><svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg></button>
       <a class="btn line small" href="./" target="_blank" rel="noopener">سایت ببینە</a>
       <button class="btn" id="save" disabled>پاشەکەفت <span class="dot" id="count" hidden>0</span></button>
     </div>
@@ -430,6 +439,7 @@ $('go').onclick=function(){
 $('save').onclick=save;
 $('logout').onclick=function(){if(!confirm('Token دێ ژ ڤێ مۆبایلێ هێتە ژێبرن. باشە؟'))return;try{localStorage.removeItem(LS)}catch(e){}cfg={repo:'',token:''};$('repo').value='';$('token').value='';showLogin()};
 window.addEventListener('beforeunload',function(e){if(data&&(JSON.stringify(data)!==saved||Object.keys(pending).length)){e.preventDefault();e.returnValue=''}});
+document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme');var dark=t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches;t=dark?'light':'dark';document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}})});
 if(cfg.repo&&cfg.token)load().catch(function(e){showLogin(errText(e))});else showLogin();
 })();
 </script>
