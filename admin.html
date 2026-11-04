@@ -141,13 +141,13 @@ var TABS=[
   {t:'کەمپین',k:['campaigns']},
   {t:'ڤیدیۆ',k:['videos']},
   {t:'ASP',k:['asp']},
-  {t:'سایت و پرۆژە',k:['web']},
+  {t:'سیستەم و سایت',k:['web']},
   {t:'ئەزموون',k:['experience','education']},
   {t:'شیان و زمان',k:['skills','languages']},
   {t:'پەیوەندی',k:['contact']}
 ];
 var L={
-  site:'گووگل و شاندنا لینکی',profile:'ناساندنا تە',services:'خزمەتگوزاری',campaigns:'کەمپین',videos:'ڤیدیۆ',asp:'ASP',web:'سایت و پرۆژە',
+  site:'گووگل و شاندنا لینکی',profile:'ناساندنا تە',services:'خزمەتگوزاری',campaigns:'کەمپین',videos:'ڤیدیۆ',asp:'ASP',web:'سیستەم و سایت',
   experience:'ئەزموونا کاری',education:'خواندن',skills:'شیان (Skills)',languages:'زمان',contact:'پەیوەندی',
   title:'سەرناڤ',description:'وەسف',name:'ناڤ',eyebrow:'نڤیسینا بچووک ل سەری',lede:'نڤیسینا ناساندنێ',photo:'وێنەیێ تە',background:'وێنەیێ پاشبنەمایێ (Background) ل سەرێ سایتی',status:'ڕەوش (وەکی Open to new projects)',
   facts:'ژمارە (ل بن ناساندنێ)',value:'ژمارە',label:'ناڤ',items:'لیست',text:'نڤیسین',intro:'نڤیسینا ناساندنێ',
@@ -161,7 +161,8 @@ var HINT={
   featured:'ب تنێ ئێک کەمپین بکە سەرەکی.',
   photo:'وێنەیەکێ ستوونی (4:5) باشترە.',
   background:'وێنەیەکێ پان (ئاسۆیی) باشترە، وەکی وێنەیێ مۆلێ. ڕەنگەکێ شین یێ تاری دێ ل سەر هێت دا نڤیسین ب ڕۆناهی دیار ببیت. ئەگەر ڤالا بیت، ڕەنگێ شین دێ مینیت.',
-  whatsapp:'بێ + و بێ 0 یا دەستپێکێ.'
+  whatsapp:'بێ + و بێ 0 یا دەستپێکێ.',
+  link:'ئەگەر ڤالا بیت، دوگمە دیار نابیت.'
 };
 var LONG={text:1,lede:1,intro:1,description:1};
 var LONGLIST={paragraphs:1,points:1};
@@ -176,7 +177,7 @@ var T={
   'videos.groups':{title:'',text:'',items:[{title:'',duration:'',src:'',poster:''}]},
   'videos.groups.*.items':{title:'',duration:'',src:'',poster:''},
   'asp.videos':{title:'',duration:'',src:'',poster:''},
-  'web.items':{kind:'',title:'',text:'',link:'',linkLabel:'Visit the site',tags:[]},
+  'web.items':{image:'',kind:'',title:'',text:'',link:'',linkLabel:'Visit the site',tags:[]},
   'experience':{when:'',title:'',where:'',points:['']},
   'education':{title:'',detail:''},
   'languages':{name:'',level:'',percent:50},

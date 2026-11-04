@@ -212,30 +212,54 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .entry{grid-template-columns:1fr;gap:6px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.zoom:hover img{transform:none}}
+/* bottom tab bar */
+:root{--glow:#4FD8C2}
+body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
+.nav .theme-btn{margin-left:auto}
+.page-first{padding-top:clamp(32px,5vw,56px)}
+.tabbar{position:fixed;z-index:30;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));width:min(560px,calc(100% - 24px));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));padding:8px;border-radius:26px;overflow:hidden;
+  background:color-mix(in srgb,var(--surface) 70%,transparent);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);
+  border:1px solid color-mix(in srgb,var(--fg) 14%,transparent);box-shadow:0 14px 40px rgba(10,25,50,.28),inset 0 1px 0 color-mix(in srgb,#fff 30%,transparent)}
+.tabbar a{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;padding:6px 2px;text-decoration:none;color:var(--muted);font-size:.72rem;font-weight:600;letter-spacing:.01em;transition:color .25s}
+.tabbar svg{width:24px;height:24px;transition:transform .25s,filter .25s}
+.tabbar a::before{content:"";position:absolute;top:-8px;left:24%;right:24%;height:4px;border-radius:0 0 6px 6px;background:var(--glow);box-shadow:0 0 14px 2px var(--glow);opacity:0;transition:opacity .25s}
+.tabbar a::after{content:"";position:absolute;z-index:-1;top:-8px;bottom:-8px;left:-6%;right:-6%;background:linear-gradient(to bottom,color-mix(in srgb,var(--glow) 38%,transparent),transparent 90%);clip-path:polygon(32% 0,68% 0,100% 100%,0 100%);opacity:0;transition:opacity .25s;pointer-events:none}
+.tabbar a[aria-current="page"]{color:var(--fg)}
+.tabbar a[aria-current="page"] svg{transform:translateY(-1px);filter:drop-shadow(0 0 6px color-mix(in srgb,var(--glow) 70%,transparent))}
+.tabbar a[aria-current="page"]::before,.tabbar a[aria-current="page"]::after{opacity:1}
+.tabbar a:focus-visible{outline-offset:-3px;border-radius:16px}
+@media (prefers-reduced-motion:reduce){.tabbar a,.tabbar svg,.tabbar a::before,.tabbar a::after{transition:none}}
+/* system cards */
+.card .shot{display:block;width:auto;margin:-10px -10px 4px;border-radius:10px;overflow:hidden;aspect-ratio:16/10}
+.card .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.card .shot.ph{display:grid;place-items:center;text-align:center;padding:16px;background:radial-gradient(ellipse 70% 60% at 80% 110%,color-mix(in srgb,var(--hi) 40%,transparent),transparent 70%),linear-gradient(160deg,var(--deep),var(--deep-2));color:var(--on-deep);font:700 clamp(1.1rem,3vw,1.4rem)/1.2 var(--display)}
+.page-first.contact{min-height:60vh}
 </style>
 </head>
 <body>
 <div id="page">
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top" id="brand"></a>
-    <div class="nav-links"><a href="#services">Services</a><a href="#campaigns">Work</a><a href="#video">Video</a><a href="#asp">ASP</a><a href="#resume">Résumé</a></div>
+    <a class="brand" href="#home" id="brand"></a>
     <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg></button>
-    <a class="btn btn-solid btn-sm" href="#contact">Contact</a>
   </div>
 </nav>
-<header class="hero" id="top"></header>
-<main>
-  <section id="services"></section>
-  <section id="campaigns" class="tight"></section>
-  <section id="video" class="tight"></section>
-  <section id="asp" class="tight"></section>
-  <section id="web" class="tight"></section>
-  <section id="resume" class="tight"></section>
-  <section id="contact" class="contact"></section>
+<main id="pages">
+  <div class="page" data-page="home">
+    <header class="hero" id="top"></header>
+    <section id="services"></section>
+    <section id="asp" class="tight"></section>
+    <section id="resume" class="tight"></section>
+  </div>
+  <div class="page" data-page="work" hidden><section id="campaigns" class="page-first"></section></div>
+  <div class="page" data-page="videos" hidden><section id="video" class="page-first"></section></div>
+  <div class="page" data-page="systems" hidden><section id="web" class="page-first"></section></div>
+  <div class="page" data-page="contact" hidden><section id="contact" class="contact page-first"></section></div>
 </main>
 <footer><div class="wrap"><span id="foot-name"></span><span>Duhok, Kurdistan Region</span></div></footer>
 </div>
+
+<nav class="tabbar" aria-label="Sections"><a href="#home" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5H15v-5.5h-6v5.5H5.5A1.5 1.5 0 0 1 4 19z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Home</span></a><a href="#work" data-tab="work"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="7" width="17" height="12.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3.5 12.5h17" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Work</span></a><a href="#videos" data-tab="videos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.2 8.8v6.4l5.2-3.2z" fill="currentColor"/></svg><span>Videos</span></a><a href="#systems" data-tab="systems"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="11.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 20h7M12 16v4M8 9.5l-1.8 1.7L8 13M16 9.5l1.8 1.7L16 13M13 8.5l-2 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Systems</span></a><a href="#contact" data-tab="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15A1.5 1.5 0 0 1 21 8v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17V8a1.5 1.5 0 0 1 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.8 7.5 8.2 6 8.2-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Contact</span></a></nav>
 
 <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image preview">
   <button id="lb-close">Close</button>
@@ -274,7 +298,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     document.getElementById('top').innerHTML='<div class="wrap"><div class="hero-text">'+
       (p.eyebrow?'<span class="eyebrow">'+esc(p.eyebrow)+'</span>':'')+
       '<h1>'+esc(p.name)+'</h1><p class="lede">'+esc(p.lede)+'</p>'+
-      '<div class="hero-actions"><a class="btn btn-light" href="#campaigns">View my work</a><a class="btn btn-ghost" href="#contact">Get in touch</a></div>'+
+      '<div class="hero-actions"><a class="btn btn-light" href="#work">View my work</a><a class="btn btn-ghost" href="#contact">Get in touch</a></div>'+
       ((p.facts||[]).length?'<div class="facts">'+p.facts.map(function(f){return '<div><b>'+esc(f.value)+'</b><small>'+esc(f.label)+'</small></div>'}).join('')+'</div>':'')+
       '</div><aside class="portrait-card"><div class="portrait">'+
       (p.photo?'<img src="'+esc(p.photo)+'" alt="Portrait of '+esc(p.name)+'">':'<span class="mono" aria-hidden="true">'+esc(initials(p.name))+'</span>')+
@@ -323,8 +347,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
     // web
     var w=c.web||{};
-    document.getElementById('web').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">Websites &amp; tools</span><h2>'+esc(w.title)+'</h2></div><div class="webgrid">'+
-      (w.items||[]).map(function(i){return '<article class="card">'+(i.kind?'<span class="kind">'+esc(i.kind)+'</span>':'')+'<h3>'+esc(i.title)+'</h3><p>'+esc(i.text)+'</p>'+
+    document.getElementById('web').innerHTML='<div class="wrap"><div class="sec-head"><span class="eyebrow">Systems &amp; websites</span><h2>'+esc(w.title)+'</h2></div><div class="webgrid">'+
+      (w.items||[]).map(function(i){return '<article class="card">'+(i.image?zoom({src:i.image,alt:i.title},'shot'):'<div class="shot ph" aria-hidden="true">'+esc(i.title)+'</div>')+(i.kind?'<span class="kind">'+esc(i.kind)+'</span>':'')+'<h3>'+esc(i.title)+'</h3><p>'+esc(i.text)+'</p>'+
         (i.link?'<a class="more" href="'+esc(i.link)+'" target="_blank" rel="noopener">'+esc(i.linkLabel||'Visit the site')+' →</a>':'')+tags(i.tags)+'</article>'}).join('')+'</div></div>';
 
     // resume
@@ -377,6 +401,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   fetch('content.json?v='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})
     .then(render)
     .catch(function(){document.getElementById('top').innerHTML='<div class="wrap"><p class="lede">The page could not load its content. Refresh to try again.</p></div>'});
+})();
+</script>
+
+<script>
+(function(){
+  var NAMES=['home','work','videos','systems','contact'];
+  var ALIAS={top:'home',services:'home',asp:'home',resume:'home',campaigns:'work',video:'videos',web:'systems'};
+  function show(){
+    var h=(location.hash||'').replace('#','');h=ALIAS[h]||h;if(NAMES.indexOf(h)<0)h='home';
+    document.querySelectorAll('.page').forEach(function(p){p.hidden=p.dataset.page!==h});
+    document.querySelectorAll('.tabbar a').forEach(function(a){if(a.dataset.tab===h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+    document.querySelectorAll('video').forEach(function(v){try{v.pause()}catch(e){}});
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show);
+  show();
 })();
 </script>
 

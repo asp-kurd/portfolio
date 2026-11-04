@@ -283,9 +283,23 @@
     ]
   },
   "web": {
-    "title": "Web projects",
+    "title": "Systems & websites",
     "items": [
       {
+        "image": "",
+        "kind": "System · Family Mall Duhok",
+        "title": "Raffle campaign system",
+        "text": "A registration system for the mall's raffle campaigns that runs on several computers at once. Cashiers register each shopper's coupons and print them, while the main admin system controls all the data and exports reports to PDF, Excel and Word.",
+        "link": "",
+        "linkLabel": "Open the system",
+        "tags": [
+          "Google Apps Script",
+          "Multi-computer",
+          "Reports"
+        ]
+      },
+      {
+        "image": "",
         "kind": "Website · Family Mall Duhok",
         "title": "Black Friday offers website",
         "text": "A public offers page that shoppers open by scanning a QR code in the mall, with a private editor so I can update offers myself.",
@@ -298,6 +312,20 @@
         ]
       },
       {
+        "image": "",
+        "kind": "System · Family Mall Duhok",
+        "title": "New Year bazaar booth map",
+        "text": "An interactive map of every booth at the New Year bazaar across the ground, first and second floors. Each booth shows the tenant, shop name, phone and status (permit granted, booked or free), with rent tracked in dollars.",
+        "link": "",
+        "linkLabel": "Open the map",
+        "tags": [
+          "Interactive map",
+          "Booking",
+          "Events"
+        ]
+      },
+      {
+        "image": "",
         "kind": "Web tool",
         "title": "Data organization website",
         "text": "A web tool for collecting, sorting and managing records in one place, so information stays tidy and easy to find.",
