@@ -1,455 +1,195 @@
 {
   "site": {
-    "title": {
-      "en": "Poya Naji – Marketing & Social Media, Duhok",
-      "ku": "پۆیا ناجی – مارکێتینگ و سۆشیال میدیا، دهۆک",
-      "ar": "بويا ناجي – التسويق ووسائل التواصل الاجتماعي، دهوك"
-    },
-    "description": {
-      "en": "Marketing & Social Media Specialist at Family Mall Duhok. Campaigns, video, events and the ASP language app.",
-      "ku": "پسپۆرێ مارکێتینگ و سۆشیال میدیا ل فامیلی مۆل دهۆک. کەمپین، ڤیدیۆ، ئیڤێنت و ئەپا زمانان ASP.",
-      "ar": "أخصائي تسويق ووسائل تواصل اجتماعي في فاميلي مول دهوك. حملات وفيديو وفعاليات وتطبيق اللغات ASP."
-    }
+    "title": "Poya Naji – Marketing & Social Media, Duhok",
+    "description": "Marketing & Social Media Specialist at Family Mall Duhok. Campaigns, video, events and the ASP language app."
   },
   "profile": {
-    "name": {
-      "en": "Poya Naji",
-      "ku": "پۆیا ناجی",
-      "ar": "بويا ناجي"
-    },
-    "eyebrow": {
-      "en": "Marketing & Social Media Specialist · Duhok",
-      "ku": "پسپۆرێ مارکێتینگ و سۆشیال میدیا · دهۆک",
-      "ar": "أخصائي تسويق ووسائل تواصل اجتماعي · دهوك"
-    },
-    "lede": {
-      "en": "I plan marketing campaigns, design the posts and edit the videos that carry them, and present them on stage. With a degree in accounting, I keep every campaign tied to its budget and results.",
-      "ku": "ئەز کەمپینێن مارکێتینگێ پلان دکەم، پۆستان دیزاین دکەم، ئەو ڤیدیۆیێن وان دگەهینن مۆنتاژ دکەم، و ل سەر ستەیجێ پێشکێش دکەم. ب بڕوانامەیا ژمێریاریێ، هەر کەمپینەکێ ب بودجە و ئەنجامێن وێ ڤە گرێددەم.",
-      "ar": "أخطط الحملات التسويقية، وأصمم المنشورات، وأُمنتج الفيديوهات التي تحملها، وأقدّمها على المسرح. وبفضل شهادتي في المحاسبة، أربط كل حملة بميزانيتها ونتائجها."
-    },
-    "photo": "",
-    "background": "",
-    "status": {
-      "en": "Open to new projects",
-      "ku": "ئامادەمە بۆ پرۆژێن نوی",
-      "ar": "متاح لمشاريع جديدة"
-    },
+    "name": "Poya Naji",
+    "eyebrow": "Marketing & Social Media Specialist · Duhok",
+    "lede": "I plan marketing campaigns, design the posts and edit the videos that carry them, and present them on stage. With a degree in accounting, I keep every campaign tied to its budget and results.",
+    "photo": "uploads/img-9167-mw2ltzek.jpg",
+    "background": "uploads/img-9975-mw2lvxvp.jpeg",
+    "status": "Open to new projects",
     "facts": [
       {
         "value": "3+",
-        "label": {
-          "en": "years in marketing",
-          "ku": "ساڵ د مارکێتینگێ دا",
-          "ar": "سنوات في التسويق"
-        }
+        "label": "years in marketing"
       },
       {
         "value": "11",
-        "label": {
-          "en": "videos produced",
-          "ku": "ڤیدیۆ من چێکرین",
-          "ar": "فيديو من إنتاجي"
-        }
+        "label": "videos produced"
       },
       {
         "value": "4",
-        "label": {
-          "en": "languages",
-          "ku": "زمان",
-          "ar": "لغات"
-        }
+        "label": "languages"
       },
       {
         "value": "B.Acc",
-        "label": {
-          "en": "Nawroz University",
-          "ku": "زانکۆیا نەورۆز",
-          "ar": "جامعة نوروز"
-        }
+        "label": "Nawroz University"
       }
     ]
   },
   "services": {
-    "title": {
-      "en": "What I do",
-      "ku": "ئەز چ دکەم",
-      "ar": "ماذا أقدّم"
-    },
+    "title": "What I do",
     "items": [
       {
-        "title": {
-          "en": "Social media management",
-          "ku": "برێڤەبرنا سۆشیال میدیایێ",
-          "ar": "إدارة وسائل التواصل الاجتماعي"
-        },
-        "text": {
-          "en": "Running brand accounts day to day: planning, posting, replies and growth.",
-          "ku": "برێڤەبرنا ئەکاونتێن براندان ڕۆژانە: پلان، پۆستکرن، بەرسڤدان و گەشەکرن.",
-          "ar": "إدارة حسابات العلامات التجارية يوميًا: التخطيط والنشر والردود والنمو."
-        }
+        "title": "Social media management",
+        "text": "Running brand accounts day to day: planning, posting, replies and growth."
       },
       {
-        "title": {
-          "en": "Campaigns & design",
-          "ku": "کەمپین و دیزاین",
-          "ar": "الحملات والتصميم"
-        },
-        "text": {
-          "en": "Promotions, contests and giveaways, from the idea to the final poster.",
-          "ku": "ئۆفەر، مسابەقە و دیاری، ژ بیرۆکێ هەتا پۆستەرێ دوماهیێ.",
-          "ar": "العروض والمسابقات والجوائز، من الفكرة حتى الملصق النهائي."
-        }
+        "title": "Campaigns & design",
+        "text": "Promotions, contests and giveaways, from the idea to the final poster."
       },
       {
-        "title": {
-          "en": "Video production",
-          "ku": "چێکرنا ڤیدیۆیان",
-          "ar": "إنتاج الفيديو"
-        },
-        "text": {
-          "en": "Filming and editing reels, promos and event coverage in vertical format.",
-          "ku": "وێنەگرتن و مۆنتاژکرنا ڕیلز، پرۆمۆ و ڤەگوهاستنا ئیڤێنتان ب شێوازێ ستوونی.",
-          "ar": "تصوير ومونتاج الريلز والإعلانات وتغطية الفعاليات بصيغة عمودية."
-        }
+        "title": "Video production",
+        "text": "Filming and editing reels, promos and event coverage in vertical format."
       },
       {
-        "title": {
-          "en": "Events & PR",
-          "ku": "ئیڤێنت و پەیوەندیێن گشتی",
-          "ar": "الفعاليات والعلاقات العامة"
-        },
-        "text": {
-          "en": "Hosting events on stage and building partnerships with sponsors.",
-          "ku": "پێشکێشکرنا ئیڤێنتان ل سەر ستەیجێ و ئاڤاکرنا هەڤکاریێ دگەل سپۆنسەران.",
-          "ar": "تقديم الفعاليات على المسرح وبناء الشراكات مع الرعاة."
-        }
+        "title": "Events & PR",
+        "text": "Hosting events on stage and building partnerships with sponsors."
       }
     ]
   },
   "campaigns": {
-    "title": {
-      "en": "Campaigns for Family Mall Duhok",
-      "ku": "کەمپین بۆ فامیلی مۆل دهۆک",
-      "ar": "حملات لفاميلي مول دهوك"
-    },
-    "intro": {
-      "en": "Campaigns I planned and designed for the mall. Tap any image to see it full size.",
-      "ku": "ئەو کەمپینێن من بۆ مۆلێ پلان و دیزاین کرین. ل سەر هەر وێنەیەکی بدە دا ب مەزنی ببینی.",
-      "ar": "حملات خططتها وصممتها للمول. اضغط على أي صورة لعرضها بالحجم الكامل."
-    },
+    "title": "Campaigns for Family Mall Duhok",
+    "intro": "Campaigns I planned and designed for the mall. Tap any image to see it full size.",
     "items": [
       {
         "featured": true,
         "wide": false,
-        "eyebrow": {
-          "en": "Featured campaign",
-          "ku": "کەمپینا سەرەکی",
-          "ar": "الحملة المميزة"
-        },
-        "title": {
-          "en": "Weekly giveaway: \"هەر حەفتی و دیاری\"",
-          "ku": "دیاریا حەفتیانە: «هەر حەفتی و دیاری»",
-          "ar": "السحب الأسبوعي: «هەر حەفتی و دیاری»"
-        },
-        "text": {
-          "en": "A weekly prize draw that gives shoppers a reason to come back every week. Every 25,000 IQD purchase earns a coupon for the draw, held each Thursday, with an iPhone Pro Max as the final grand prize.",
-          "ku": "پشککێشانەکا حەفتیانە کو بازارکەران هان ددەت هەر حەفتی بزڤڕن. هەر کڕینەکا 25,000 دیناری کۆپۆنەکێ بۆ پشککێشانێ ددەت، کو هەر پێنجشەمبییەکێ دهێتە کرن، و دیاریا مەزن یا دوماهیێ iPhone Pro Max ە.",
-          "ar": "سحب أسبوعي على الجوائز يمنح المتسوقين سببًا للعودة كل أسبوع. كل عملية شراء بقيمة 25,000 دينار تمنح قسيمة للسحب الذي يُجرى كل خميس، والجائزة الكبرى النهائية iPhone Pro Max."
-        },
+        "eyebrow": "Featured campaign",
+        "title": "Weekly giveaway: \"هەر حەفتی و دیاری\"",
+        "text": "A weekly prize draw that gives shoppers a reason to come back every week. Every 25,000 IQD purchase earns a coupon for the draw, held each Thursday, with an iPhone Pro Max as the final grand prize.",
         "highlight": "25,000 IQD",
         "details": [
           {
-            "label": {
-              "en": "Draw",
-              "ku": "پشککێشان",
-              "ar": "السحب"
-            },
-            "value": {
-              "en": "Every Thursday",
-              "ku": "هەر پێنجشەمبی",
-              "ar": "كل خميس"
-            }
+            "label": "Draw",
+            "value": "Every Thursday"
           },
           {
-            "label": {
-              "en": "Prizes",
-              "ku": "دیاری",
-              "ar": "الجوائز"
-            },
-            "value": {
-              "en": "iPhone · PS5 · ATV · Gold",
-              "ku": "iPhone · PS5 · ATV · زێڕ",
-              "ar": "iPhone · PS5 · ATV · ذهب"
-            }
+            "label": "Prizes",
+            "value": "iPhone · PS5 · ATV · Gold"
           },
           {
-            "label": {
-              "en": "Format",
-              "ku": "فۆرمات",
-              "ar": "الصيغة"
-            },
-            "value": {
-              "en": "4:5 social post, KU + AR",
-              "ku": "پۆستا سۆشیال 4:5، کوردی + عەرەبی",
-              "ar": "منشور 4:5، كردي + عربي"
-            }
+            "label": "Format",
+            "value": "4:5 social post, KU + AR"
           }
         ],
         "images": [
           {
             "src": "img/weekly-giveaway.jpg",
-            "alt": {
-              "en": "Weekly giveaway flyer with an iPhone, PlayStation 5, ATV and gold on a podium",
-              "ku": "فلایەرا دیاریا حەفتیانە دگەل iPhone، PlayStation 5، ATV و زێڕ",
-              "ar": "ملصق السحب الأسبوعي مع iPhone وPlayStation 5 ودراجة ATV وذهب"
-            }
+            "alt": "Weekly giveaway flyer with an iPhone, PlayStation 5, ATV and gold on a podium"
           }
         ],
         "tags": [
-          {
-            "en": "Campaign planning",
-            "ku": "پلانا کەمپینێ",
-            "ar": "تخطيط الحملات"
-          },
-          {
-            "en": "Flyer design",
-            "ku": "دیزاینا فلایەری",
-            "ar": "تصميم الملصقات"
-          },
-          {
-            "en": "Social media",
-            "ku": "سۆشیال میدیا",
-            "ar": "وسائل التواصل"
-          }
+          "Campaign planning",
+          "Flyer design",
+          "Social media"
         ]
       },
       {
         "featured": false,
         "wide": true,
-        "eyebrow": {
-          "en": "Anniversary campaign",
-          "ku": "کەمپینا ساڵڤەگەڕێ",
-          "ar": "حملة الذكرى السنوية"
-        },
-        "title": {
-          "en": "The mall's 11th anniversary",
-          "ku": "ساڵڤەگەڕا ١١ یا مۆلێ",
-          "ar": "الذكرى الحادية عشرة للمول"
-        },
-        "text": {
-          "en": "Illustrated posters celebrating 11 years of the region's biggest shopping center, plus a 25,000 IQD gift voucher handed out during the celebration.",
-          "ku": "پۆستەرێن وێنەکێشای بۆ ئاهەنگا ١١ ساڵیا مەزنترین ناڤەندا بازارکرنێ ل دەڤەرێ، دگەل کۆپۆنا دیاریێ یا 25,000 دیناری کو د ئاهەنگێ دا هاتە بەلاڤکرن.",
-          "ar": "ملصقات مرسومة احتفالًا بمرور 11 عامًا على أكبر مركز تسوق في المنطقة، مع قسيمة هدية بقيمة 25,000 دينار وُزّعت خلال الاحتفال."
-        },
+        "eyebrow": "Anniversary campaign",
+        "title": "The mall's 11th anniversary",
+        "text": "Illustrated posters celebrating 11 years of the region's biggest shopping center, plus a 25,000 IQD gift voucher handed out during the celebration.",
         "highlight": "",
         "details": [],
         "images": [
           {
             "src": "img/anniversary-11-family.jpg",
-            "alt": {
-              "en": "Illustrated 11 years poster showing the mall with a smiling family carrying shopping bags",
-              "ku": "پۆستەرێ ١١ ساڵان: مۆل و مالباتەکا کەیفخۆش ب تووڕکێن بازارێ ڤە",
-              "ar": "ملصق 11 عامًا يُظهر المول وعائلة سعيدة تحمل أكياس التسوق"
-            }
+            "alt": "Illustrated 11 years poster showing the mall with a smiling family carrying shopping bags"
           },
           {
             "src": "img/anniversary-11.jpg",
-            "alt": {
-              "en": "Illustrated 11 years poster showing the mall from above",
-              "ku": "پۆستەرێ ١١ ساڵان: مۆل ژ سەرڤە",
-              "ar": "ملصق 11 عامًا يُظهر المول من الأعلى"
-            }
+            "alt": "Illustrated 11 years poster showing the mall from above"
           }
         ],
         "tags": [
-          {
-            "en": "Illustration direction",
-            "ku": "ڕێنماییا وێنەکێشانێ",
-            "ar": "توجيه الرسوم"
-          },
-          {
-            "en": "Brand campaign",
-            "ku": "کەمپینا براندی",
-            "ar": "حملة العلامة التجارية"
-          }
+          "Illustration direction",
+          "Brand campaign"
         ]
       },
       {
         "featured": false,
         "wide": false,
-        "eyebrow": {
-          "en": "Information post",
-          "ku": "پۆستا زانیاریان",
-          "ar": "منشور معلومات"
-        },
-        "title": {
-          "en": "Opening hours & location",
-          "ku": "دەمێن ڤەکرنێ و جهـ",
-          "ar": "ساعات العمل والموقع"
-        },
-        "text": {
-          "en": "A clear post with the weekly opening hours and a map pin, so visitors know when to come and how to find the mall.",
-          "ku": "پۆستەکا ڕوون ب دەمێن ڤەکرنێ یێن حەفتیێ و نیشانا نەخشەیێ، دا سەرەدانکەر بزانن کەنگی بهێن و چاوا مۆلی ببینن.",
-          "ar": "منشور واضح بساعات العمل الأسبوعية ودبوس على الخريطة، ليعرف الزوار متى يأتون وكيف يصلون إلى المول."
-        },
+        "eyebrow": "Information post",
+        "title": "Opening hours & location",
+        "text": "A clear post with the weekly opening hours and a map pin, so visitors know when to come and how to find the mall.",
         "highlight": "",
         "details": [],
         "images": [
           {
             "src": "img/opening-hours.jpg",
-            "alt": {
-              "en": "Opening hours post with an aerial photo of the mall and a map pin",
-              "ku": "پۆستا دەمێن ڤەکرنێ دگەل وێنەیەکێ مۆلێ ژ هەوایێ و نیشانا نەخشەیێ",
-              "ar": "منشور ساعات العمل مع صورة جوية للمول ودبوس خريطة"
-            }
+            "alt": "Opening hours post with an aerial photo of the mall and a map pin"
           }
         ],
         "tags": [
-          {
-            "en": "Social post",
-            "ku": "پۆستا سۆشیال",
-            "ar": "منشور اجتماعي"
-          }
+          "Social post"
         ]
       },
       {
         "featured": false,
         "wide": true,
-        "eyebrow": {
-          "en": "Engagement contest",
-          "ku": "مسابەقەیا بەشداریێ",
-          "ar": "مسابقة تفاعلية"
-        },
-        "title": {
-          "en": "El Clásico prediction contest",
-          "ku": "مسابەقەیا پێشبینیا ئێل کلاسیکۆ",
-          "ar": "مسابقة توقّع الكلاسيكو"
-        },
-        "text": {
-          "en": "Followers predicted the result of the big match for a chance to win a 25,000 IQD gift voucher, tying the mall to the biggest football moment of the season.",
-          "ku": "فۆلۆوەران ئەنجامێ یاریا مەزن پێشبینی دکر بۆ دەرفەتا بدەستڤەئینانا کۆپۆنا دیاریێ یا 25,000 دیناری، و ڤی ڕەنگی مۆل ب مەزنترین ساتا فوتبۆلێ یا وەرزی ڤە هاتە گرێدان.",
-          "ar": "توقّع المتابعون نتيجة المباراة الكبرى للفوز بقسيمة هدية بقيمة 25,000 دينار، ما ربط المول بأكبر لحظة كروية في الموسم."
-        },
+        "eyebrow": "Engagement contest",
+        "title": "El Clásico prediction contest",
+        "text": "Followers predicted the result of the big match for a chance to win a 25,000 IQD gift voucher, tying the mall to the biggest football moment of the season.",
         "highlight": "",
         "details": [],
         "images": [
           {
             "src": "img/clasico-voucher.jpg",
-            "alt": {
-              "en": "El Clásico prediction contest design with a 25,000 IQD gift voucher",
-              "ku": "دیزاینا مسابەقەیا ئێل کلاسیکۆ دگەل کۆپۆنا 25,000 دیناری",
-              "ar": "تصميم مسابقة الكلاسيكو مع قسيمة هدية بقيمة 25,000 دينار"
-            }
+            "alt": "El Clásico prediction contest design with a 25,000 IQD gift voucher"
           }
         ],
         "tags": [
-          {
-            "en": "Social contest",
-            "ku": "مسابەقەیا سۆشیال",
-            "ar": "مسابقة على السوشيال"
-          },
-          {
-            "en": "Engagement",
-            "ku": "بەشداری",
-            "ar": "التفاعل"
-          }
+          "Social contest",
+          "Engagement"
         ]
       },
       {
         "featured": false,
         "wide": false,
-        "eyebrow": {
-          "en": "Print design",
-          "ku": "دیزاینا چاپێ",
-          "ar": "تصميم مطبوعات"
-        },
-        "title": {
-          "en": "Anniversary gift voucher",
-          "ku": "کۆپۆنا دیاریا ساڵڤەگەڕێ",
-          "ar": "قسيمة هدية الذكرى السنوية"
-        },
-        "text": {
-          "en": "A printed voucher with clear terms for shoppers: not exchangeable for cash and valid until a set date.",
-          "ku": "کۆپۆنەکا چاپکری ب مەرجێن ڕوون بۆ بازارکەران: ب پارە ناهێتە گوهۆڕین و هەتا دەمەکێ دیارکری دەرباسە.",
-          "ar": "قسيمة مطبوعة بشروط واضحة للمتسوقين: غير قابلة للاستبدال نقدًا وصالحة حتى تاريخ محدد."
-        },
+        "eyebrow": "Print design",
+        "title": "Anniversary gift voucher",
+        "text": "A printed voucher with clear terms for shoppers: not exchangeable for cash and valid until a set date.",
         "highlight": "",
         "details": [],
         "images": [
           {
             "src": "img/anniversary-voucher.jpg",
-            "alt": {
-              "en": "11th anniversary 25,000 IQD gift voucher with usage notes",
-              "ku": "کۆپۆنا دیاریێ یا 25,000 دیناری بۆ ساڵڤەگەڕا ١١ دگەل تێبینیێن بکارئینانێ",
-              "ar": "قسيمة هدية بقيمة 25,000 دينار للذكرى الحادية عشرة مع ملاحظات الاستخدام"
-            }
+            "alt": "11th anniversary 25,000 IQD gift voucher with usage notes"
           }
         ],
         "tags": [
-          {
-            "en": "Print",
-            "ku": "چاپ",
-            "ar": "طباعة"
-          },
-          {
-            "en": "Voucher",
-            "ku": "کۆپۆن",
-            "ar": "قسيمة"
-          }
+          "Print",
+          "Voucher"
         ]
       }
     ]
   },
   "videos": {
-    "title": {
-      "en": "Reels and promo videos",
-      "ku": "ڕیلز و ڤیدیۆیێن پرۆمۆ",
-      "ar": "ريلز وفيديوهات ترويجية"
-    },
-    "intro": {
-      "en": "Vertical videos I filmed and edited for Instagram, Facebook and TikTok. Tap a video to play it.",
-      "ku": "ڤیدیۆیێن ستوونی کو من بۆ ئینستاگرام، فەیسبووک و تیکتۆکێ وێنە گرتین و مۆنتاژ کرین. ل سەر ڤیدیۆیەکێ بدە دا لێبدەت.",
-      "ar": "فيديوهات عمودية صوّرتها وأنتجتها لإنستغرام وفيسبوك وتيك توك. اضغط على أي فيديو لتشغيله."
-    },
+    "title": "Reels and promo videos",
+    "intro": "Vertical videos I filmed and edited for Instagram, Facebook and TikTok. Tap a video to play it.",
     "groups": [
       {
-        "title": {
-          "en": "Brand promos",
-          "ku": "پرۆمۆیێن براندی",
-          "ar": "إعلانات العلامة التجارية"
-        },
-        "text": {
-          "en": "Short brand films for the mall and its stores.",
-          "ku": "فلیمێن کورت بۆ مۆلێ و دوکانێن وێ.",
-          "ar": "أفلام قصيرة للمول ومتاجره."
-        },
+        "title": "Brand promos",
+        "text": "Short brand films for the mall and its stores.",
         "items": [
           {
-            "title": {
-              "en": "Family Mall Duhok promo",
-              "ku": "پرۆمۆیا فامیلی مۆل دهۆک",
-              "ar": "إعلان فاميلي مول دهوك"
-            },
+            "title": "Family Mall Duhok promo",
             "duration": "0:24",
             "src": "media/v02.mp4",
             "poster": "media/v02.jpg"
           },
           {
-            "title": {
-              "en": "Store totem promo",
-              "ku": "پرۆمۆیا تۆتەما دوکانێ",
-              "ar": "إعلان شاشة المتجر"
-            },
+            "title": "Store totem promo",
             "duration": "0:25",
             "src": "media/v03.mp4",
             "poster": "media/v03.jpg"
           },
           {
-            "title": {
-              "en": "Store feature reel",
-              "ku": "ڕیلا ناساندنا دوکانێ",
-              "ar": "ريل تعريفي بمتجر"
-            },
+            "title": "Store feature reel",
             "duration": "0:30",
             "src": "media/v08.mp4",
             "poster": "media/v08.jpg"
@@ -457,43 +197,23 @@
         ]
       },
       {
-        "title": {
-          "en": "Halloween 2026 campaign",
-          "ku": "کەمپینا هالۆوینا 2026",
-          "ar": "حملة هالوين 2026"
-        },
-        "text": {
-          "en": "A teaser, the main promo and a montage for the mall's Halloween Night.",
-          "ku": "تیزەرەک، پرۆمۆیا سەرەکی و مۆنتاژەک بۆ شەڤا هالۆوینێ ل مۆلێ.",
-          "ar": "إعلان تشويقي والإعلان الرئيسي ومونتاج لليلة الهالوين في المول."
-        },
+        "title": "Halloween 2026 campaign",
+        "text": "A teaser, the main promo and a montage for the mall's Halloween Night.",
         "items": [
           {
-            "title": {
-              "en": "Halloween teaser",
-              "ku": "تیزەرا هالۆوینێ",
-              "ar": "إعلان تشويقي للهالوين"
-            },
+            "title": "Halloween teaser",
             "duration": "0:18",
             "src": "media/v04.mp4",
             "poster": "media/v04.jpg"
           },
           {
-            "title": {
-              "en": "Halloween 2026 promo",
-              "ku": "پرۆمۆیا هالۆوینا 2026",
-              "ar": "إعلان هالوين 2026"
-            },
+            "title": "Halloween 2026 promo",
             "duration": "0:43",
             "src": "media/v05.mp4",
             "poster": "media/v05.jpg"
           },
           {
-            "title": {
-              "en": "Halloween Night montage",
-              "ku": "مۆنتاژا شەڤا هالۆوینێ",
-              "ar": "مونتاج ليلة الهالوين"
-            },
+            "title": "Halloween Night montage",
             "duration": "0:46",
             "src": "media/v06.mp4",
             "poster": "media/v06.jpg"
@@ -501,33 +221,17 @@
         ]
       },
       {
-        "title": {
-          "en": "Event coverage",
-          "ku": "ڤەگوهاستنا ئیڤێنتان",
-          "ar": "تغطية الفعاليات"
-        },
-        "text": {
-          "en": "Coverage of visits and evening events at the mall.",
-          "ku": "ڤەگوهاستنا سەرەدانان و ئیڤێنتێن ئێڤاری ل مۆلێ.",
-          "ar": "تغطية الزيارات والفعاليات المسائية في المول."
-        },
+        "title": "Event coverage",
+        "text": "Coverage of visits and evening events at the mall.",
         "items": [
           {
-            "title": {
-              "en": "Official visit",
-              "ku": "سەرەدانا فەرمی",
-              "ar": "زيارة رسمية"
-            },
+            "title": "Official visit",
             "duration": "0:51",
             "src": "media/v07.mp4",
             "poster": "media/v07.jpg"
           },
           {
-            "title": {
-              "en": "Evening event",
-              "ku": "ئیڤێنتا ئێڤاری",
-              "ar": "فعالية مسائية"
-            },
+            "title": "Evening event",
             "duration": "0:16",
             "src": "media/v11.mp4",
             "poster": "media/v11.jpg"
@@ -537,697 +241,195 @@
     ]
   },
   "asp": {
-    "eyebrow": {
-      "en": "Own project · Live now",
-      "ku": "پرۆژێ من · نوکە بەردەستە",
-      "ar": "مشروعي الخاص · متاح الآن"
-    },
-    "title": {
-      "en": "ASP: learn languages with your own voice",
-      "ku": "ASP: زمانان ب دەنگێ خۆ فێر ببە",
-      "ar": "ASP: تعلّم اللغات بصوتك"
-    },
+    "eyebrow": "Own project · Live now",
+    "title": "ASP: learn languages with your own voice",
     "paragraphs": [
-      {
-        "en": "A language-learning app I built for Kurdish speakers. Learners practise German and English by speaking, with every lesson explained in Badini Kurdish, so they can study without a teacher. More languages are coming soon. It grew out of my own German study and my A1.1 self-study course book.",
-        "ku": "ئەپەکا فێربوونا زمانانە کو من بۆ ئاخفتنڤانێن کوردی چێکری. فێرخواز ئەلمانی و ئینگلیزی ب ئاخفتنێ مەشق دکەن، و هەر وانەیەک ب کوردی بادینی دهێتە ڕوونکرن، دا بێ مامۆستا بشێن بخوینن. زمانێن دی ژی دێ ب زوویی هێن. ئەڤ ئەپە ژ خواندنا من بۆ زمانێ ئەلمانی و پەرتووکا من یا A1.1 بۆ خۆفێرکرنێ پەیدا بوو.",
-        "ar": "تطبيق لتعلّم اللغات صمّمته للناطقين بالكردية. يتدرّب المتعلمون على الألمانية والإنجليزية بالتحدث، مع شرح كل درس باللهجة البادينية، ليتمكنوا من الدراسة دون معلّم. ولغات أخرى قادمة قريبًا. وُلد التطبيق من دراستي الشخصية للألمانية ومن كتابي للتعلّم الذاتي لمستوى A1.1."
-      },
-      {
-        "en": "ASP is live on the web and works on any phone: open it and add it to the home screen like an app. I launched it on TikTok in November 2026.",
-        "ku": "ASP ل سەر ئینتەرنێتێ بەردەستە و ل سەر هەر مۆبایلەکێ کار دکەت: ڤەکە و وەکی ئەپ زێدەی سەر شاشا خۆ بکە. من ل هەیڤا تشرینا دووێ 2026 ل سەر تیکتۆکێ دەستپێکر.",
-        "ar": "تطبيق ASP متاح على الويب ويعمل على أي هاتف: افتحه وأضفه إلى الشاشة الرئيسية كتطبيق. أطلقته على تيك توك في نوفمبر 2026."
-      }
+      "A language-learning app I built for Kurdish speakers. Learners practise German and English by speaking, with every lesson explained in Badini Kurdish, so they can study without a teacher. More languages are coming soon. It grew out of my own German study and my A1.1 self-study course book.",
+      "ASP is live on the web and works on any phone: open it and add it to the home screen like an app. I launched it on TikTok in November 2026."
     ],
     "image": "img/asp-app.jpg",
     "languages": [
-      {
-        "en": "Kurdish (Badini)",
-        "ku": "کوردی (بادینی)",
-        "ar": "الكردية (البادينية)"
-      },
-      {
-        "en": "Deutsch",
-        "ku": "ئەلمانی",
-        "ar": "الألمانية"
-      },
-      {
-        "en": "English",
-        "ku": "ئینگلیزی",
-        "ar": "الإنجليزية"
-      }
+      "Kurdish (Badini)",
+      "Deutsch",
+      "English"
     ],
     "link": "https://asp-kurd.github.io/",
-    "linkLabel": {
-      "en": "Open ASP",
-      "ku": "ASP ڤەکە",
-      "ar": "افتح ASP"
-    },
+    "linkLabel": "Open ASP",
     "videos": [
       {
-        "title": {
-          "en": "Trailer",
-          "ku": "ترەیلەر",
-          "ar": "إعلان"
-        },
+        "title": "Trailer",
         "duration": "0:39",
         "src": "media/v01.mp4",
         "poster": "media/v01.jpg"
       },
       {
-        "title": {
-          "en": "Logo reveal",
-          "ku": "دیارکرنا لۆگۆیێ",
-          "ar": "ظهور الشعار"
-        },
+        "title": "Logo reveal",
         "duration": "0:08",
         "src": "media/v09.mp4",
         "poster": "media/v09.jpg"
       },
       {
-        "title": {
-          "en": "Intro",
-          "ku": "دەستپێک",
-          "ar": "مقدمة"
-        },
+        "title": "Intro",
         "duration": "0:10",
         "src": "media/v10.mp4",
         "poster": "media/v10.jpg"
       }
     ],
     "tags": [
-      {
-        "en": "App concept",
-        "ku": "بیرۆکا ئەپێ",
-        "ar": "فكرة التطبيق"
-      },
-      {
-        "en": "Course design",
-        "ku": "دیزاینا وانەیان",
-        "ar": "تصميم الدروس"
-      },
-      {
-        "en": "Branding",
-        "ku": "براندینگ",
-        "ar": "الهوية البصرية"
-      },
-      {
-        "en": "Motion",
-        "ku": "مۆشن",
-        "ar": "موشن"
-      }
+      "App concept",
+      "Course design",
+      "Branding",
+      "Motion"
     ]
   },
   "web": {
-    "title": {
-      "en": "Systems & websites",
-      "ku": "سیستەم و سایت",
-      "ar": "الأنظمة والمواقع"
-    },
+    "title": "Systems & websites",
     "items": [
       {
-        "images": [
-          {
-            "src": "img/systems/raffle-dashboard.jpg",
-            "alt": {
-              "en": "Dashboard: sales by store, shoppers by city and entries per day",
-              "ku": "داشبۆرد: فرۆشتن ل دووڤ دوکانان، بازارکەر ل دووڤ باژێڕان و تۆمار ل هەر ڕۆژەکێ",
-              "ar": "لوحة التحكم: المبيعات حسب المتجر، والمتسوقون حسب المدينة، والتسجيلات يوميًا"
-            }
-          },
-          {
-            "src": "img/systems/raffle-cashier.jpg",
-            "alt": {
-              "en": "Cashier screen: registration form and printable receipt",
-              "ku": "شاشا کاشێری: فۆرما تۆمارکرنێ و پسولا چاپکرنێ",
-              "ar": "شاشة الكاشير: نموذج التسجيل والإيصال القابل للطباعة"
-            }
-          },
-          {
-            "src": "img/systems/raffle-data.jpg",
-            "alt": {
-              "en": "All entries with search and filters",
-              "ku": "هەمی تۆمار دگەل گەڕیان و فلتەران",
-              "ar": "جميع السجلات مع البحث والتصفية"
-            }
-          },
-          {
-            "src": "img/systems/raffle-reports.jpg",
-            "alt": {
-              "en": "Report builder for PDF, Excel and Word",
-              "ku": "دروستکرنا ڕاپۆرتان بۆ PDF، Excel و Word",
-              "ar": "منشئ التقارير بصيغ PDF وExcel وWord"
-            }
-          },
-          {
-            "src": "img/systems/raffle-settings.jpg",
-            "alt": {
-              "en": "Settings: stores, cities, cashiers and prize draw",
-              "ku": "ڕێکخستن: دوکان، باژێڕ، کاشێر و پشککێشان",
-              "ar": "الإعدادات: المتاجر والمدن والكاشير والسحب"
-            }
-          }
-        ],
-        "kind": {
-          "en": "System · Family Mall Duhok",
-          "ku": "سیستەم · فامیلی مۆل دهۆک",
-          "ar": "نظام · فاميلي مول دهوك"
-        },
-        "title": {
-          "en": "Raffle campaign system",
-          "ku": "سیستەمێ کەمپینا پشککێشانێ",
-          "ar": "نظام حملة السحب"
-        },
-        "text": {
-          "en": "A registration system for the mall's raffle campaigns that runs on several computers at once. Cashiers register each shopper's coupons and print them, while the main admin system controls all the data and exports reports to PDF, Excel and Word.",
-          "ku": "سیستەمێ تۆمارکرنێ بۆ کەمپینێن پشککێشانێ یێن مۆلێ، کو ل سەر چەند کۆمپیوتەران پێکڤە کار دکەت. کاشێر کۆپۆنێن هەر بازارکەرەکی تۆمار دکەن و چاپ دکەن، و سیستەمێ دایک هەمی داتایان کۆنترۆل دکەت و ڕاپۆرتان ب PDF، Excel و Word دەردئێخیت.",
-          "ar": "نظام تسجيل لحملات السحب في المول يعمل على عدة أجهزة كمبيوتر في وقت واحد. يسجّل الكاشير قسائم كل متسوق ويطبعها، بينما يتحكم النظام الرئيسي بجميع البيانات ويصدّر التقارير بصيغ PDF وExcel وWord."
-        },
-        "points": [
-          {
-            "en": "Main admin system: live dashboard, every entry, reports and campaign settings.",
-            "ku": "سیستەمێ دایک: داشبۆردا ڕاستەوخۆ، هەمی تۆمار، ڕاپۆرت و ڕێکخستنێن کەمپینێ.",
-            "ar": "النظام الرئيسي: لوحة مباشرة، وكل السجلات، والتقارير، وإعدادات الحملة."
-          },
-          {
-            "en": "Cashier stations on several computers register shoppers and print a receipt with the coupon code.",
-            "ku": "کاشێر ل سەر چەند کۆمپیوتەران بازارکەران تۆمار دکەن و پسولەیەکێ ب کۆدێ کۆپۆنێ چاپ دکەن.",
-            "ar": "محطات الكاشير على عدة أجهزة تسجّل المتسوقين وتطبع إيصالًا برمز القسيمة."
-          },
-          {
-            "en": "Coupons are counted automatically: one coupon for every 25,000 IQD spent.",
-            "ku": "کۆپۆن ب خۆ دهێنە هژمارتن: بۆ هەر 25,000 دیناران کۆپۆنەک.",
-            "ar": "تُحسب القسائم تلقائيًا: قسيمة لكل 25,000 دينار."
-          },
-          {
-            "en": "Reports by store, city, cashier and date, exported to PDF, Excel or Word.",
-            "ku": "ڕاپۆرت ل دووڤ دوکان، باژێڕ، کاشێر و ڕێکەفتێ، ب PDF، Excel یان Word.",
-            "ar": "تقارير حسب المتجر والمدينة والكاشير والتاريخ، بصيغ PDF أو Excel أو Word."
-          },
-          {
-            "en": "Built-in prize draw that picks a winner from all coupons.",
-            "ku": "پشککێشانەکا ناڤخۆیی کو ژ ناڤ هەمی کۆپۆنان سەرکەفتیەکێ هەلدبژێریت.",
-            "ar": "سحب مدمج يختار فائزًا من بين جميع القسائم."
-          }
-        ],
-        "note": {
-          "en": "Screenshots show sample data, not real shoppers.",
-          "ku": "وێنە داتایێن نموونە نیشان ددەن، نە بازارکەرێن ڕاستی.",
-          "ar": "الصور تعرض بيانات تجريبية وليست لمتسوقين حقيقيين."
-        },
+        "image": "",
+        "kind": "System · Family Mall Duhok",
+        "title": "Raffle campaign system",
+        "text": "A registration system for the mall's raffle campaigns that runs on several computers at once. Cashiers register each shopper's coupons and print them, while the main admin system controls all the data and exports reports to PDF, Excel and Word.",
         "link": "",
-        "linkLabel": {
-          "en": "Open the system",
-          "ku": "سیستەمی ڤەکە",
-          "ar": "افتح النظام"
-        },
+        "linkLabel": "Open the system",
         "tags": [
-          {
-            "en": "Google Apps Script",
-            "ku": "Google Apps Script",
-            "ar": "Google Apps Script"
-          },
-          {
-            "en": "Multi-computer",
-            "ku": "چەند کۆمپیوتەر",
-            "ar": "أجهزة متعددة"
-          },
-          {
-            "en": "Reports",
-            "ku": "ڕاپۆرت",
-            "ar": "تقارير"
-          }
+          "Google Apps Script",
+          "Multi-computer",
+          "Reports"
         ]
       },
       {
-        "images": [
-          {
-            "src": "img/systems/offers-home.jpg",
-            "alt": {
-              "en": "Offers home page on a phone",
-              "ku": "پەڕا سەرەکی یا ئۆفەران ل سەر مۆبایلێ",
-              "ar": "الصفحة الرئيسية للعروض على الهاتف"
-            }
-          }
-        ],
-        "kind": {
-          "en": "Website · Family Mall Duhok",
-          "ku": "سایت · فامیلی مۆل دهۆک",
-          "ar": "موقع · فاميلي مول دهوك"
-        },
-        "title": {
-          "en": "Black Friday offers website",
-          "ku": "سایتێ ئۆفەرێن بلاک فرایدەی",
-          "ar": "موقع عروض الجمعة السوداء"
-        },
-        "text": {
-          "en": "A public offers page that shoppers open by scanning a QR code in the mall, with a private editor so I can update offers myself.",
-          "ku": "پەڕەیەکا گشتیا ئۆفەرانە کو بازارکەر ب سکانکرنا QR کۆدەکێ ل مۆلێ ڤەدکەن، دگەل ئێدیتەرەکێ تایبەت دا ئەز ب خۆ ئۆفەران نوو بکەم.",
-          "ar": "صفحة عروض عامة يفتحها المتسوقون بمسح رمز QR داخل المول، مع محرر خاص أحدّث العروض من خلاله بنفسي."
-        },
-        "points": [
-          {
-            "en": "Shoppers scan a QR code in the mall and see every offer on their phone.",
-            "ku": "بازارکەر QR کۆدەکێ ل مۆلێ سکان دکەن و هەمی ئۆفەران ل سەر مۆبایلا خۆ دبینن.",
-            "ar": "يمسح المتسوقون رمز QR في المول ويشاهدون كل العروض على هواتفهم."
-          },
-          {
-            "en": "Offers are grouped by category, with search.",
-            "ku": "ئۆفەر ل دووڤ جۆران هاتینە ڕێکخستن، دگەل گەڕیانێ.",
-            "ar": "العروض مصنّفة حسب الفئة مع إمكانية البحث."
-          },
-          {
-            "en": "A private editor lets me add, change or remove offers in minutes.",
-            "ku": "ئێدیتەرەکێ تایبەت ڕێ ددەتە من د چەند خولەکان دا ئۆفەران زێدە بکەم، بگوهۆڕم یان ژێببەم.",
-            "ar": "محرر خاص يتيح لي إضافة العروض أو تعديلها أو حذفها في دقائق."
-          }
-        ],
-        "note": {
-          "en": "",
-          "ku": "",
-          "ar": ""
-        },
+        "image": "",
+        "kind": "Website · Family Mall Duhok",
+        "title": "Black Friday offers website",
+        "text": "A public offers page that shoppers open by scanning a QR code in the mall, with a private editor so I can update offers myself.",
         "link": "https://familymallduhok-offers.netlify.app",
-        "linkLabel": {
-          "en": "Visit the site",
-          "ku": "سەرەدانا سایتی بکە",
-          "ar": "زيارة الموقع"
-        },
+        "linkLabel": "Visit the site",
         "tags": [
-          {
-            "en": "Web",
-            "ku": "وێب",
-            "ar": "ويب"
-          },
-          {
-            "en": "QR campaign",
-            "ku": "کەمپینا QR",
-            "ar": "حملة QR"
-          },
-          {
-            "en": "Netlify",
-            "ku": "Netlify",
-            "ar": "Netlify"
-          }
+          "Web",
+          "QR campaign",
+          "Netlify"
         ]
       },
       {
-        "images": [
-          {
-            "src": "img/systems/bazaar-map.jpg",
-            "alt": {
-              "en": "Booth map of the ground floor",
-              "ku": "نەخشەیا جهێن قاتێ عەردی",
-              "ar": "خريطة أجنحة الطابق الأرضي"
-            }
-          },
-          {
-            "src": "img/systems/bazaar-dashboard.jpg",
-            "alt": {
-              "en": "Dashboard: booth status and rent per floor",
-              "ku": "داشبۆرد: ڕەوشا جهان و کرێ بۆ هەر قاتەکی",
-              "ar": "لوحة التحكم: حالة الأجنحة والإيجار لكل طابق"
-            }
-          },
-          {
-            "src": "img/systems/bazaar-data.jpg",
-            "alt": {
-              "en": "All booths in one table",
-              "ku": "هەمی جهـ د ئێک خشتەیێ دا",
-              "ar": "جميع الأجنحة في جدول واحد"
-            }
-          },
-          {
-            "src": "img/systems/bazaar-reports.jpg",
-            "alt": {
-              "en": "Reports with columns and filters",
-              "ku": "ڕاپۆرت دگەل ستوون و فلتەران",
-              "ar": "تقارير مع الأعمدة والفلاتر"
-            }
-          }
-        ],
-        "kind": {
-          "en": "System · Family Mall Duhok",
-          "ku": "سیستەم · فامیلی مۆل دهۆک",
-          "ar": "نظام · فاميلي مول دهوك"
-        },
-        "title": {
-          "en": "New Year bazaar booth map",
-          "ku": "نەخشەیا جهێن بازاڕێ سەرێ سالێ",
-          "ar": "خريطة أجنحة بازار رأس السنة"
-        },
-        "text": {
-          "en": "An interactive map of every booth at the New Year bazaar across the ground, first and second floors. Each booth shows the tenant, shop name, phone and status (rented, reserved or free), with rent totals for each floor.",
-          "ku": "نەخشەیەکا ئینتەراکتیڤە بۆ هەمی جهێن بازاڕێ سەرێ سالێ ل قاتێ عەردی، ئێکێ و دووێ. هەر جهەک ناڤێ کەسی، ناڤێ دوکانێ، ژمارە و ڕەوشا خۆ (ب ئیجار، حجز یان ڤالا) نیشان ددەت، دگەل کۆما کرێیێ بۆ هەر قاتەکی.",
-          "ar": "خريطة تفاعلية لكل أجنحة بازار رأس السنة في الطابق الأرضي والأول والثاني. يعرض كل جناح اسم المستأجر واسم المحل ورقم الهاتف والحالة (مؤجّر أو محجوز أو فارغ)، مع مجموع الإيجار لكل طابق."
-        },
-        "points": [
-          {
-            "en": "Booths drawn on the plan of each floor, coloured by status: rented, reserved or free.",
-            "ku": "جهـ ل سەر نەخشەیا هەر قاتەکی هاتینە کێشان و ب ڕەنگێ ڕەوشا خۆ نە: ب ئیجار، حجز یان ڤالا.",
-            "ar": "الأجنحة مرسومة على مخطط كل طابق وملوّنة حسب الحالة: مؤجّر أو محجوز أو فارغ."
-          },
-          {
-            "en": "Tap a booth to see or edit the tenant, shop, phone and rent.",
-            "ku": "ل سەر جهەکی بدە دا ناڤێ کەسی، دوکان، ژمارە و کرێیێ ببینی یان بگوهۆڕی.",
-            "ar": "اضغط على جناح لعرض أو تعديل المستأجر والمحل والهاتف والإيجار."
-          },
-          {
-            "en": "Dashboard with totals, occupancy and rent per floor.",
-            "ku": "داشبۆرد دگەل کۆمێ گشتی، ڕێژەیا پڕبوونێ و کرێیێ بۆ هەر قاتەکی.",
-            "ar": "لوحة بالمجاميع ونسبة الإشغال والإيجار لكل طابق."
-          },
-          {
-            "en": "Reports by floor and status, exported to PDF, Excel or Word.",
-            "ku": "ڕاپۆرت ل دووڤ قات و ڕەوشێ، ب PDF، Excel یان Word.",
-            "ar": "تقارير حسب الطابق والحالة بصيغ PDF أو Excel أو Word."
-          }
-        ],
-        "note": {
-          "en": "Screenshots show sample data, not real tenants.",
-          "ku": "وێنە داتایێن نموونە نیشان ددەن، نە کەسێن ڕاستی.",
-          "ar": "الصور تعرض بيانات تجريبية وليست لمستأجرين حقيقيين."
-        },
+        "image": "",
+        "kind": "System · Family Mall Duhok",
+        "title": "New Year bazaar booth map",
+        "text": "An interactive map of every booth at the New Year bazaar across the ground, first and second floors. Each booth shows the tenant, shop name, phone and status (permit granted, booked or free), with rent tracked in dollars.",
         "link": "",
-        "linkLabel": {
-          "en": "Open the map",
-          "ku": "نەخشەیێ ڤەکە",
-          "ar": "افتح الخريطة"
-        },
+        "linkLabel": "Open the map",
         "tags": [
-          {
-            "en": "Interactive map",
-            "ku": "نەخشەیا ئینتەراکتیڤ",
-            "ar": "خريطة تفاعلية"
-          },
-          {
-            "en": "Booking",
-            "ku": "حجزکرن",
-            "ar": "الحجز"
-          },
-          {
-            "en": "Events",
-            "ku": "ئیڤێنت",
-            "ar": "فعاليات"
-          }
+          "Interactive map",
+          "Booking",
+          "Events"
         ]
       },
       {
-        "images": [],
-        "kind": {
-          "en": "Web tool",
-          "ku": "ئامرازێ وێبێ",
-          "ar": "أداة ويب"
-        },
-        "title": {
-          "en": "Data organization website",
-          "ku": "سایتێ ڕێکخستنا داتایان",
-          "ar": "موقع تنظيم البيانات"
-        },
-        "text": {
-          "en": "A web tool for collecting, sorting and managing records in one place, so information stays tidy and easy to find.",
-          "ku": "ئامرازەکێ وێبێیە بۆ کۆمکرن، ڕیزکرن و برێڤەبرنا تۆماران ل ئێک جهـ، دا زانیاری ب ڕێک و پێکی بمینن و ب ساناهی بهێنە دیتن.",
-          "ar": "أداة ويب لجمع السجلات وترتيبها وإدارتها في مكان واحد، لتبقى المعلومات منظمة وسهلة الوصول."
-        },
-        "points": [],
-        "note": {
-          "en": "",
-          "ku": "",
-          "ar": ""
-        },
+        "image": "",
+        "kind": "Web tool",
+        "title": "Data organization website",
+        "text": "A web tool for collecting, sorting and managing records in one place, so information stays tidy and easy to find.",
         "link": "",
-        "linkLabel": {
-          "en": "Visit the site",
-          "ku": "سەرەدانا سایتی بکە",
-          "ar": "زيارة الموقع"
-        },
+        "linkLabel": "Visit the site",
         "tags": [
-          {
-            "en": "Web app",
-            "ku": "ئەپا وێبێ",
-            "ar": "تطبيق ويب"
-          },
-          {
-            "en": "Data management",
-            "ku": "برێڤەبرنا داتایان",
-            "ar": "إدارة البيانات"
-          }
+          "Web app",
+          "Data management"
         ]
       }
     ]
   },
   "experience": [
     {
-      "when": {
-        "en": "2023 – Now",
-        "ku": "2023 – نوکە",
-        "ar": "2023 – الآن"
-      },
-      "title": {
-        "en": "Marketing & Social Media Specialist",
-        "ku": "پسپۆرێ مارکێتینگ و سۆشیال میدیا",
-        "ar": "أخصائي تسويق ووسائل تواصل اجتماعي"
-      },
-      "where": {
-        "en": "Family Mall · Duhok",
-        "ku": "فامیلی مۆل · دهۆک",
-        "ar": "فاميلي مول · دهوك"
-      },
+      "when": "2023 – Now",
+      "title": "Marketing & Social Media Specialist",
+      "where": "Family Mall · Duhok",
       "points": [
-        {
-          "en": "Manage the mall's social media and create content that grows brand visibility.",
-          "ku": "برێڤەبرنا سۆشیال میدیایا مۆلێ و چێکرنا ناڤەرۆکێ کو براندی بەرچاڤتر دکەت.",
-          "ar": "إدارة حسابات المول على وسائل التواصل وصناعة محتوى يعزز حضور العلامة."
-        },
-        {
-          "en": "Handle public relations and build partnerships with sponsors.",
-          "ku": "برێڤەبرنا پەیوەندیێن گشتی و ئاڤاکرنا هەڤکاریێ دگەل سپۆنسەران.",
-          "ar": "إدارة العلاقات العامة وبناء الشراكات مع الرعاة."
-        },
-        {
-          "en": "Present and host mall events and promotional campaigns.",
-          "ku": "پێشکێشکرنا ئیڤێنت و کەمپینێن ڕێکلامێ یێن مۆلێ.",
-          "ar": "تقديم فعاليات المول وحملاته الترويجية."
-        }
+        "Manage the mall's social media and create content that grows brand visibility.",
+        "Handle public relations and build partnerships with sponsors.",
+        "Present and host mall events and promotional campaigns."
       ]
     },
     {
-      "when": {
-        "en": "2021 – 2023",
-        "ku": "2021 – 2023",
-        "ar": "2021 – 2023"
-      },
-      "title": {
-        "en": "Accountant",
-        "ku": "ژمێریار",
-        "ar": "محاسب"
-      },
-      "where": {
-        "en": "Pizza Palace · Duhok",
-        "ku": "پیتزا پالاس · دهۆک",
-        "ar": "بيتزا بالاس · دهوك"
-      },
+      "when": "2021 – 2023",
+      "title": "Accountant",
+      "where": "Pizza Palace · Duhok",
       "points": [
-        {
-          "en": "Managed daily transactions, bookkeeping and cash flow.",
-          "ku": "برێڤەبرنا مامەلێن ڕۆژانە، تۆمارێن حسابان و هاتن و چوونا پارەی.",
-          "ar": "إدارة المعاملات اليومية والدفاتر والتدفق النقدي."
-        },
-        {
-          "en": "Prepared financial reports and tracked expenses against budget.",
-          "ku": "ئامادەکرنا ڕاپۆرتێن دارایی و چاڤدێریا مەسرەفان بەرامبەر بودجێ.",
-          "ar": "إعداد التقارير المالية ومتابعة المصاريف مقارنة بالميزانية."
-        },
-        {
-          "en": "Worked with management to improve cost control.",
-          "ku": "کارکرن دگەل برێڤەبەریێ بۆ باشترکرنا کۆنترۆلا مەسرەفان.",
-          "ar": "العمل مع الإدارة لتحسين ضبط التكاليف."
-        }
+        "Managed daily transactions, bookkeeping and cash flow.",
+        "Prepared financial reports and tracked expenses against budget.",
+        "Worked with management to improve cost control."
       ]
     }
   ],
   "education": [
     {
-      "title": {
-        "en": "Bachelor's in Accounting",
-        "ku": "بەکالۆریۆس د ژمێریاریێ دا",
-        "ar": "بكالوريوس محاسبة"
-      },
-      "detail": {
-        "en": "Nawroz University, Duhok · 2024",
-        "ku": "زانکۆیا نەورۆز، دهۆک · 2024",
-        "ar": "جامعة نوروز، دهوك · 2024"
-      }
+      "title": "Bachelor's in Accounting",
+      "detail": "Nawroz University, Duhok · 2024"
     }
   ],
   "skills": [
-    {
-      "en": "Social media management",
-      "ku": "برێڤەبرنا سۆشیال میدیایێ",
-      "ar": "إدارة وسائل التواصل الاجتماعي"
-    },
-    {
-      "en": "Campaign planning",
-      "ku": "پلانا کەمپینێ",
-      "ar": "تخطيط الحملات"
-    },
-    {
-      "en": "Video editing",
-      "ku": "مۆنتاژا ڤیدیۆیان",
-      "ar": "مونتاج الفيديو"
-    },
-    {
-      "en": "Poster design",
-      "ku": "دیزاینا پۆستەران",
-      "ar": "تصميم الملصقات"
-    },
-    {
-      "en": "Public relations",
-      "ku": "پەیوەندیێن گشتی",
-      "ar": "العلاقات العامة"
-    },
-    {
-      "en": "Public speaking",
-      "ku": "ئاخفتن ل بەر خەلکی",
-      "ar": "الخطابة"
-    },
-    {
-      "en": "Negotiation",
-      "ku": "دانوستاندن",
-      "ar": "التفاوض"
-    },
-    {
-      "en": "Financial accounting",
-      "ku": "ژمێریاریا دارایی",
-      "ar": "المحاسبة المالية"
-    },
-    {
-      "en": "Budgeting",
-      "ku": "دانانا بودجێ",
-      "ar": "إعداد الميزانيات"
-    }
+    "Social media management",
+    "Campaign planning",
+    "Video editing",
+    "Poster design",
+    "Public relations",
+    "Public speaking",
+    "Negotiation",
+    "Financial accounting",
+    "Budgeting"
   ],
   "languages": [
     {
-      "name": {
-        "en": "Kurdish",
-        "ku": "کوردی",
-        "ar": "الكردية"
-      },
-      "level": {
-        "en": "Native",
-        "ku": "زمانێ دایکێ",
-        "ar": "اللغة الأم"
-      },
+      "name": "Kurdish",
+      "level": "Native",
       "percent": 100
     },
     {
-      "name": {
-        "en": "Persian",
-        "ku": "فارسی",
-        "ar": "الفارسية"
-      },
-      "level": {
-        "en": "Fluent",
-        "ku": "ب ڕەوانی",
-        "ar": "بطلاقة"
-      },
+      "name": "Persian",
+      "level": "Fluent",
       "percent": 90
     },
     {
-      "name": {
-        "en": "Arabic",
-        "ku": "عەرەبی",
-        "ar": "العربية"
-      },
-      "level": {
-        "en": "Very good",
-        "ku": "گەلەک باش",
-        "ar": "جيد جدًا"
-      },
+      "name": "Arabic",
+      "level": "Very good",
       "percent": 78
     },
     {
-      "name": {
-        "en": "English",
-        "ku": "ئینگلیزی",
-        "ar": "الإنجليزية"
-      },
-      "level": {
-        "en": "Very good",
-        "ku": "گەلەک باش",
-        "ar": "جيد جدًا"
-      },
+      "name": "English",
+      "level": "Very good",
       "percent": 78
     },
     {
-      "name": {
-        "en": "German",
-        "ku": "ئەلمانی",
-        "ar": "الألمانية"
-      },
-      "level": {
-        "en": "Learning",
-        "ku": "فێر دبم",
-        "ar": "قيد التعلّم"
-      },
+      "name": "German",
+      "level": "Learning",
       "percent": 30
     }
   ],
   "contact": {
-    "title": {
-      "en": "Let's work together",
-      "ku": "وەرە پێکڤە کار بکەین",
-      "ar": "لنعمل معًا"
-    },
-    "text": {
-      "en": "I am available for marketing, social media, video and hosting work in Duhok and across the Kurdistan Region.",
-      "ku": "ئامادەمە بۆ کارێن مارکێتینگ، سۆشیال میدیا، ڤیدیۆ و پێشکێشکرنێ ل دهۆکێ و سەرانسەری هەرێما کوردستانێ.",
-      "ar": "متاح لأعمال التسويق ووسائل التواصل والفيديو والتقديم في دهوك وفي جميع أنحاء إقليم كوردستان."
-    },
+    "title": "Let's work together",
+    "text": "I am available for marketing, social media, video and hosting work in Duhok and across the Kurdistan Region.",
     "email": "Groupkurdish@gmail.com",
     "phone": "+964 750 350 0818",
-    "phoneLabel": {
-      "en": "Phone (Korek) / WhatsApp",
-      "ku": "تەلەفۆن (کۆڕەک) / واتسئەپ",
-      "ar": "الهاتف (كورك) / واتساب"
-    },
+    "phoneLabel": "Phone (Korek) / WhatsApp",
     "whatsapp": "9647503500818",
     "socials": [
       {
         "type": "linkedin",
-        "label": {
-          "en": "LinkedIn",
-          "ku": "لینکدئین",
-          "ar": "لينكدإن"
-        },
+        "label": "LinkedIn",
         "url": "https://www.linkedin.com/in/poya-nerway-650923419/"
       },
       {
         "type": "instagram",
-        "label": {
-          "en": "Instagram",
-          "ku": "ئینستاگرام",
-          "ar": "إنستغرام"
-        },
+        "label": "Instagram",
         "url": "https://www.instagram.com/poya_najii/"
       },
       {
         "type": "facebook",
-        "label": {
-          "en": "Facebook",
-          "ku": "فەیسبووک",
-          "ar": "فيسبوك"
-        },
+        "label": "Facebook",
         "url": "https://www.facebook.com/share/1Fd6YW5qfi/"
       },
       {
         "type": "asp",
-        "label": {
-          "en": "ASP app",
-          "ku": "ئەپا ASP",
-          "ar": "تطبيق ASP"
-        },
+        "label": "ASP app",
         "url": "https://asp-kurd.github.io/"
       }
     ]
