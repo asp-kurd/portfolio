@@ -8,21 +8,46 @@
     "eyebrow": "Marketing & Social Media Specialist · Duhok",
     "lede": "I plan marketing campaigns, design the posts and edit the videos that carry them, and present them on stage. With a degree in accounting, I keep every campaign tied to its budget and results.",
     "photo": "",
+    "background": "",
     "status": "Open to new projects",
     "facts": [
-      { "value": "3+", "label": "years in marketing" },
-      { "value": "11", "label": "videos produced" },
-      { "value": "4", "label": "languages" },
-      { "value": "B.Acc", "label": "Nawroz University" }
+      {
+        "value": "3+",
+        "label": "years in marketing"
+      },
+      {
+        "value": "11",
+        "label": "videos produced"
+      },
+      {
+        "value": "4",
+        "label": "languages"
+      },
+      {
+        "value": "B.Acc",
+        "label": "Nawroz University"
+      }
     ]
   },
   "services": {
     "title": "What I do",
     "items": [
-      { "title": "Social media management", "text": "Running brand accounts day to day: planning, posting, replies and growth." },
-      { "title": "Campaigns & design", "text": "Promotions, contests and giveaways, from the idea to the final poster." },
-      { "title": "Video production", "text": "Filming and editing reels, promos and event coverage in vertical format." },
-      { "title": "Events & PR", "text": "Hosting events on stage and building partnerships with sponsors." }
+      {
+        "title": "Social media management",
+        "text": "Running brand accounts day to day: planning, posting, replies and growth."
+      },
+      {
+        "title": "Campaigns & design",
+        "text": "Promotions, contests and giveaways, from the idea to the final poster."
+      },
+      {
+        "title": "Video production",
+        "text": "Filming and editing reels, promos and event coverage in vertical format."
+      },
+      {
+        "title": "Events & PR",
+        "text": "Hosting events on stage and building partnerships with sponsors."
+      }
     ]
   },
   "campaigns": {
@@ -37,14 +62,30 @@
         "text": "A weekly prize draw that gives shoppers a reason to come back every week. Every 25,000 IQD purchase earns a coupon for the draw, held each Thursday, with an iPhone Pro Max as the final grand prize.",
         "highlight": "25,000 IQD",
         "details": [
-          { "label": "Draw", "value": "Every Thursday" },
-          { "label": "Prizes", "value": "iPhone · PS5 · ATV · Gold" },
-          { "label": "Format", "value": "4:5 social post, KU + AR" }
+          {
+            "label": "Draw",
+            "value": "Every Thursday"
+          },
+          {
+            "label": "Prizes",
+            "value": "iPhone · PS5 · ATV · Gold"
+          },
+          {
+            "label": "Format",
+            "value": "4:5 social post, KU + AR"
+          }
         ],
         "images": [
-          { "src": "img/weekly-giveaway.jpg", "alt": "Weekly giveaway flyer with an iPhone, PlayStation 5, ATV and gold on a podium" }
+          {
+            "src": "img/weekly-giveaway.jpg",
+            "alt": "Weekly giveaway flyer with an iPhone, PlayStation 5, ATV and gold on a podium"
+          }
         ],
-        "tags": ["Campaign planning", "Flyer design", "Social media"]
+        "tags": [
+          "Campaign planning",
+          "Flyer design",
+          "Social media"
+        ]
       },
       {
         "featured": false,
@@ -55,10 +96,19 @@
         "highlight": "",
         "details": [],
         "images": [
-          { "src": "img/anniversary-11-family.jpg", "alt": "Illustrated 11 years poster showing the mall with a smiling family carrying shopping bags" },
-          { "src": "img/anniversary-11.jpg", "alt": "Illustrated 11 years poster showing the mall from above" }
+          {
+            "src": "img/anniversary-11-family.jpg",
+            "alt": "Illustrated 11 years poster showing the mall with a smiling family carrying shopping bags"
+          },
+          {
+            "src": "img/anniversary-11.jpg",
+            "alt": "Illustrated 11 years poster showing the mall from above"
+          }
         ],
-        "tags": ["Illustration direction", "Brand campaign"]
+        "tags": [
+          "Illustration direction",
+          "Brand campaign"
+        ]
       },
       {
         "featured": false,
@@ -69,9 +119,14 @@
         "highlight": "",
         "details": [],
         "images": [
-          { "src": "img/opening-hours.jpg", "alt": "Opening hours post with an aerial photo of the mall and a map pin" }
+          {
+            "src": "img/opening-hours.jpg",
+            "alt": "Opening hours post with an aerial photo of the mall and a map pin"
+          }
         ],
-        "tags": ["Social post"]
+        "tags": [
+          "Social post"
+        ]
       },
       {
         "featured": false,
@@ -82,9 +137,15 @@
         "highlight": "",
         "details": [],
         "images": [
-          { "src": "img/clasico-voucher.jpg", "alt": "El Clásico prediction contest design with a 25,000 IQD gift voucher" }
+          {
+            "src": "img/clasico-voucher.jpg",
+            "alt": "El Clásico prediction contest design with a 25,000 IQD gift voucher"
+          }
         ],
-        "tags": ["Social contest", "Engagement"]
+        "tags": [
+          "Social contest",
+          "Engagement"
+        ]
       },
       {
         "featured": false,
@@ -95,9 +156,15 @@
         "highlight": "",
         "details": [],
         "images": [
-          { "src": "img/anniversary-voucher.jpg", "alt": "11th anniversary 25,000 IQD gift voucher with usage notes" }
+          {
+            "src": "img/anniversary-voucher.jpg",
+            "alt": "11th anniversary 25,000 IQD gift voucher with usage notes"
+          }
         ],
-        "tags": ["Print", "Voucher"]
+        "tags": [
+          "Print",
+          "Voucher"
+        ]
       }
     ]
   },
@@ -109,26 +176,66 @@
         "title": "Brand promos",
         "text": "Short brand films for the mall and its stores.",
         "items": [
-          { "title": "Family Mall Duhok promo", "duration": "0:24", "src": "media/v02.mp4", "poster": "media/v02.jpg" },
-          { "title": "Store totem promo", "duration": "0:25", "src": "media/v03.mp4", "poster": "media/v03.jpg" },
-          { "title": "Store feature reel", "duration": "0:30", "src": "media/v08.mp4", "poster": "media/v08.jpg" }
+          {
+            "title": "Family Mall Duhok promo",
+            "duration": "0:24",
+            "src": "media/v02.mp4",
+            "poster": "media/v02.jpg"
+          },
+          {
+            "title": "Store totem promo",
+            "duration": "0:25",
+            "src": "media/v03.mp4",
+            "poster": "media/v03.jpg"
+          },
+          {
+            "title": "Store feature reel",
+            "duration": "0:30",
+            "src": "media/v08.mp4",
+            "poster": "media/v08.jpg"
+          }
         ]
       },
       {
         "title": "Halloween 2026 campaign",
         "text": "A teaser, the main promo and a montage for the mall's Halloween Night.",
         "items": [
-          { "title": "Halloween teaser", "duration": "0:18", "src": "media/v04.mp4", "poster": "media/v04.jpg" },
-          { "title": "Halloween 2026 promo", "duration": "0:43", "src": "media/v05.mp4", "poster": "media/v05.jpg" },
-          { "title": "Halloween Night montage", "duration": "0:46", "src": "media/v06.mp4", "poster": "media/v06.jpg" }
+          {
+            "title": "Halloween teaser",
+            "duration": "0:18",
+            "src": "media/v04.mp4",
+            "poster": "media/v04.jpg"
+          },
+          {
+            "title": "Halloween 2026 promo",
+            "duration": "0:43",
+            "src": "media/v05.mp4",
+            "poster": "media/v05.jpg"
+          },
+          {
+            "title": "Halloween Night montage",
+            "duration": "0:46",
+            "src": "media/v06.mp4",
+            "poster": "media/v06.jpg"
+          }
         ]
       },
       {
         "title": "Event coverage",
         "text": "Coverage of visits and evening events at the mall.",
         "items": [
-          { "title": "Official visit", "duration": "0:51", "src": "media/v07.mp4", "poster": "media/v07.jpg" },
-          { "title": "Evening event", "duration": "0:16", "src": "media/v11.mp4", "poster": "media/v11.jpg" }
+          {
+            "title": "Official visit",
+            "duration": "0:51",
+            "src": "media/v07.mp4",
+            "poster": "media/v07.jpg"
+          },
+          {
+            "title": "Evening event",
+            "duration": "0:16",
+            "src": "media/v11.mp4",
+            "poster": "media/v11.jpg"
+          }
         ]
       }
     ]
@@ -141,15 +248,39 @@
       "ASP is live on the web and works on any phone: open it and add it to the home screen like an app. I launched it on TikTok in November 2026."
     ],
     "image": "img/asp-app.jpg",
-    "languages": ["Kurdish (Badini)", "Deutsch", "English"],
+    "languages": [
+      "Kurdish (Badini)",
+      "Deutsch",
+      "English"
+    ],
     "link": "https://asp-kurd.github.io/",
     "linkLabel": "Open ASP",
     "videos": [
-      { "title": "Trailer", "duration": "0:39", "src": "media/v01.mp4", "poster": "media/v01.jpg" },
-      { "title": "Logo reveal", "duration": "0:08", "src": "media/v09.mp4", "poster": "media/v09.jpg" },
-      { "title": "Intro", "duration": "0:10", "src": "media/v10.mp4", "poster": "media/v10.jpg" }
+      {
+        "title": "Trailer",
+        "duration": "0:39",
+        "src": "media/v01.mp4",
+        "poster": "media/v01.jpg"
+      },
+      {
+        "title": "Logo reveal",
+        "duration": "0:08",
+        "src": "media/v09.mp4",
+        "poster": "media/v09.jpg"
+      },
+      {
+        "title": "Intro",
+        "duration": "0:10",
+        "src": "media/v10.mp4",
+        "poster": "media/v10.jpg"
+      }
     ],
-    "tags": ["App concept", "Course design", "Branding", "Motion"]
+    "tags": [
+      "App concept",
+      "Course design",
+      "Branding",
+      "Motion"
+    ]
   },
   "web": {
     "title": "Web projects",
@@ -160,7 +291,11 @@
         "text": "A public offers page that shoppers open by scanning a QR code in the mall, with a private editor so I can update offers myself.",
         "link": "https://familymallduhok-offers.netlify.app",
         "linkLabel": "Visit the site",
-        "tags": ["Web", "QR campaign", "Netlify"]
+        "tags": [
+          "Web",
+          "QR campaign",
+          "Netlify"
+        ]
       },
       {
         "kind": "Web tool",
@@ -168,7 +303,10 @@
         "text": "A web tool for collecting, sorting and managing records in one place, so information stays tidy and easy to find.",
         "link": "",
         "linkLabel": "Visit the site",
-        "tags": ["Web app", "Data management"]
+        "tags": [
+          "Web app",
+          "Data management"
+        ]
       }
     ]
   },
@@ -195,15 +333,48 @@
     }
   ],
   "education": [
-    { "title": "Bachelor's in Accounting", "detail": "Nawroz University, Duhok · 2024" }
+    {
+      "title": "Bachelor's in Accounting",
+      "detail": "Nawroz University, Duhok · 2024"
+    }
   ],
-  "skills": ["Social media management", "Campaign planning", "Video editing", "Poster design", "Public relations", "Public speaking", "Negotiation", "Financial accounting", "Budgeting"],
+  "skills": [
+    "Social media management",
+    "Campaign planning",
+    "Video editing",
+    "Poster design",
+    "Public relations",
+    "Public speaking",
+    "Negotiation",
+    "Financial accounting",
+    "Budgeting"
+  ],
   "languages": [
-    { "name": "Kurdish", "level": "Native", "percent": 100 },
-    { "name": "Persian", "level": "Fluent", "percent": 90 },
-    { "name": "Arabic", "level": "Very good", "percent": 78 },
-    { "name": "English", "level": "Very good", "percent": 78 },
-    { "name": "German", "level": "Learning", "percent": 30 }
+    {
+      "name": "Kurdish",
+      "level": "Native",
+      "percent": 100
+    },
+    {
+      "name": "Persian",
+      "level": "Fluent",
+      "percent": 90
+    },
+    {
+      "name": "Arabic",
+      "level": "Very good",
+      "percent": 78
+    },
+    {
+      "name": "English",
+      "level": "Very good",
+      "percent": 78
+    },
+    {
+      "name": "German",
+      "level": "Learning",
+      "percent": 30
+    }
   ],
   "contact": {
     "title": "Let's work together",
@@ -213,10 +384,26 @@
     "phoneLabel": "Phone (Korek) / WhatsApp",
     "whatsapp": "9647503500818",
     "socials": [
-      { "type": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/poya-nerway-650923419/" },
-      { "type": "instagram", "label": "Instagram", "url": "https://www.instagram.com/poya_najii/" },
-      { "type": "facebook", "label": "Facebook", "url": "https://www.facebook.com/share/1Fd6YW5qfi/" },
-      { "type": "asp", "label": "ASP app", "url": "https://asp-kurd.github.io/" }
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/poya-nerway-650923419/"
+      },
+      {
+        "type": "instagram",
+        "label": "Instagram",
+        "url": "https://www.instagram.com/poya_najii/"
+      },
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/share/1Fd6YW5qfi/"
+      },
+      {
+        "type": "asp",
+        "label": "ASP app",
+        "url": "https://asp-kurd.github.io/"
+      }
     ]
   }
 }

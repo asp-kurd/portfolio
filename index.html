@@ -269,6 +269,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     document.getElementById('foot-name').textContent='© '+new Date().getFullYear()+' '+(p.name||'');
 
     // hero
+    var heroEl=document.getElementById('top');
+    if(p.background){heroEl.style.backgroundImage='linear-gradient(160deg,rgba(20,44,76,.86),rgba(34,82,143,.70)),url("'+encodeURI(p.background).replace(/"/g,'%22')+'")';heroEl.style.backgroundSize='cover';heroEl.style.backgroundPosition='center'}else{heroEl.style.backgroundImage='';}
     document.getElementById('top').innerHTML='<div class="wrap"><div class="hero-text">'+
       (p.eyebrow?'<span class="eyebrow">'+esc(p.eyebrow)+'</span>':'')+
       '<h1>'+esc(p.name)+'</h1><p class="lede">'+esc(p.lede)+'</p>'+

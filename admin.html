@@ -149,7 +149,7 @@ var TABS=[
 var L={
   site:'گووگل و شاندنا لینکی',profile:'ناساندنا تە',services:'خزمەتگوزاری',campaigns:'کەمپین',videos:'ڤیدیۆ',asp:'ASP',web:'سایت و پرۆژە',
   experience:'ئەزموونا کاری',education:'خواندن',skills:'شیان (Skills)',languages:'زمان',contact:'پەیوەندی',
-  title:'سەرناڤ',description:'وەسف',name:'ناڤ',eyebrow:'نڤیسینا بچووک ل سەری',lede:'نڤیسینا ناساندنێ',photo:'وێنەیێ تە',status:'ڕەوش (وەکی Open to new projects)',
+  title:'سەرناڤ',description:'وەسف',name:'ناڤ',eyebrow:'نڤیسینا بچووک ل سەری',lede:'نڤیسینا ناساندنێ',photo:'وێنەیێ تە',background:'وێنەیێ پاشبنەمایێ (Background) ل سەرێ سایتی',status:'ڕەوش (وەکی Open to new projects)',
   facts:'ژمارە (ل بن ناساندنێ)',value:'ژمارە',label:'ناڤ',items:'لیست',text:'نڤیسین',intro:'نڤیسینا ناساندنێ',
   featured:'کەمپینا سەرەکی (ب مەزنی نیشان بدە)',wide:'پانتر نیشان بدە',highlight:'ژمارا مەزن (وەکی 25,000 IQD)',details:'هوورگلی',images:'وێنە',
   src:'فایل',alt:'وەسفا وێنەیێ (ب ئینگلیزی)',tags:'تاگ',groups:'کۆمێن ڤیدیۆیان',duration:'درێژاهی (وەکی 0:24)',poster:'وێنەیێ سەر ڤیدیۆیێ',
@@ -160,11 +160,12 @@ var L={
 var HINT={
   featured:'ب تنێ ئێک کەمپین بکە سەرەکی.',
   photo:'وێنەیەکێ ستوونی (4:5) باشترە.',
+  background:'وێنەیەکێ پان (ئاسۆیی) باشترە، وەکی وێنەیێ مۆلێ. ڕەنگەکێ شین یێ تاری دێ ل سەر هێت دا نڤیسین ب ڕۆناهی دیار ببیت. ئەگەر ڤالا بیت، ڕەنگێ شین دێ مینیت.',
   whatsapp:'بێ + و بێ 0 یا دەستپێکێ.'
 };
 var LONG={text:1,lede:1,intro:1,description:1};
 var LONGLIST={paragraphs:1,points:1};
-var MEDIA={src:1,poster:1,image:1,photo:1};
+var MEDIA={src:1,poster:1,image:1,photo:1,background:1};
 var SOCIAL=['linkedin','instagram','facebook','tiktok','youtube','asp','link'];
 var T={
   'profile.facts':{value:'',label:''},
@@ -393,6 +394,7 @@ function mediaField(p,v){
   var clear=el('button',{class:'btn danger small',type:'button',text:'ژێبرن',onclick:function(){var old=get(p);if(pending[old]){URL.revokeObjectURL(pending[old].url);delete pending[old]}set(p,'');txt.value='';pend.hidden=true;showPrev()}});
   showPrev();
   f.appendChild(el('div',{class:'media'},[prev,el('div',{class:'side'},[el('div',{class:'row'},[up,clear]),pend,txt,fileIn])]));
+  if(HINT[k])f.appendChild(el('p',{class:'hint',style:'margin:4px 0 0',text:HINT[k]}));
   return f;
 }
 function arrayNode(p,arr,top){
